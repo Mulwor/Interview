@@ -1,7 +1,9 @@
 ## Questions 
 ---
 ### 1. [Function](#Function)
-### 2. [Another](#Another)
+### 2. [Promise](#Promise)
+### 3. [Async,ajax,await](#ajax-async-await)
+### 3. [Another](#Another)
 ---
 
 ### Function
@@ -479,7 +481,10 @@ const three = (a) = {
 - This есть в обычных функциях, но у стрелочных его нет
 - Стрелочные функции не могут быть вызвани с new
 
+
 </details>
+
+---
 
 ### Another (находится доп.вопросы, которые немного задержатся)
 
@@ -493,4 +498,54 @@ const three = (a) = {
 	<summary> 19. Разница между .call(), .apply() и bind()? и разница между ними </summary>
 
 </details>
+
 ---
+
+### Promise
+
+<details>
+    <summary> Что такое промисы (Promises)? </summary>
+
+</details>
+
+<details>
+    <summary> Разница между Promise.all(), Promise.any() и Promise.race()? </summary>
+
+</details>
+
+<details>
+    <summary> Расскажите про статический метод .allSettled()? </summary>
+
+</details>
+
+<details>
+    <summary> Преимущества использовании промисов вместо колбэков? </summary>
+</details>
+
+---
+
+### Ajax, async, await
+
+
+<details>
+    <summary> Что такое async/await? </summary>
+</details>
+
+
+<details>
+    <summary> Что такое AJAX?</summary>
+</details>
+
+
+<details>
+    <summary> Плюсы и минусы использовании Ajax? Подходы при работе с асинхронным кодом?</summary>
+</details>
+
+
+<details>
+    <summary> Какие приемы работы с асинхронным кодом в JS Вы знаете?</summary>
+</details>
+
+<details>
+	<summary>  Как клиент взаимодействует с сервером? </summary>
+</details>
