@@ -270,7 +270,7 @@ document.getElementById("btn").addEventListener("click", function () {
 
 Функции высшего порядка – принимает в качестве аргумента функцию, добавляет в нее новый функционал и возвращает новую функцию, но уже с новым функционалом. К функциям высшего порядка относятся: map, filter, reduce.
 <img src = "./3.PNG" alt="Пример">
-<details>
+</details>
 
 <details>
 <summary> 11. Типы функций по способности принимать другие функции? </summary>
@@ -290,6 +290,7 @@ document.getElementById("btn").addEventListener("click", function () {
 `const unaryFunction = (a) => console.log(${a} + world!)`
 
 </details>
+
 <details>
 <summary>11. Что такое замыкание (Closure)?
 </summary>
