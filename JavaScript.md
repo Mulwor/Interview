@@ -1,8 +1,10 @@
 ## Questions 
+---
+### 1. [Function](#Function)
+### 2. [Another](#Another)
+---
 
-### 1. [Function](#1-function)
-
-### 1. Function
+### Function
 <details>
 <summary> 1. Что такое выражения (expression) и инструкции (statement) в JavaScript?</summary>
 
@@ -479,15 +481,16 @@ const three = (a) = {
 
 </details>
 
+### Another (находится доп.вопросы, которые немного задержатся)
+
 <details>
-<summary>18. Что обозначает this в JavaScript? </summary>
+	<summary>18. Что обозначает this в JavaScript? </summary>
 
 
 </details>
 
 <details>
-
-<summary> 19. Разница между .call(), .apply() и bind()? и разница между ними </summary>
+	<summary> 19. Разница между .call(), .apply() и bind()? и разница между ними </summary>
 
 </details>
 ---
