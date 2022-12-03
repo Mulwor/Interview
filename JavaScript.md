@@ -1,8 +1,8 @@
-#### Questions 
+## Questions 
 
-1. [Function](#1-function)
+### 1. [Function](#1-function)
 
-#### 1. Function
+### 1. Function
 <details>
 <summary> 1. Что такое выражения (expression) и инструкции (statement) в JavaScript?</summary>
 
@@ -244,11 +244,11 @@ document.getElementById("btn").addEventListener("click", function () {
 </details>
 
 <details>
-<summary>
-10. Что такое функции высшего порядка (Higher Order Functions)?</summary>
+
+<summary>10. Что такое функции высшего порядка (Higher Order Functions)?</summary>
 
 Функции высшего порядка – принимает в качестве аргумента функцию, добавляет в нее новый функционал и возвращает новую функцию, но уже с новым функционалом. К функциям высшего порядка относятся: map, filter, reduce.
-<img src = "./3.PNG" alt="Пример">
+<img src = "./assets/3.PNG" alt="Пример">
 </details>
 
 <details>
