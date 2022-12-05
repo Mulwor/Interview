@@ -504,8 +504,10 @@ const three = (a) = {
 ### Promise
 
 <details>
-    <summary> Что такое промисы (Promises)? </summary>
+<summary> Что такое промисы (Promises)? </summary>
 
+
+Содержит в себе 3 состояния: `pending` - ожидания; `fulfilled` - выполнено успешно; `rejected` - выполнено с ошибкой
 </details>
 
 <details>
