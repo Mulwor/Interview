@@ -9,8 +9,66 @@
 #### Вопросы
 
 <details>
-<summary> 1. Что такое React? Перечислите особенности React? Назовите преимущества использования React?</summary>
+<summary> 1. Что такое React и перечислите особенности React?</summary>
+Это javascript - библиотека с открытым исходным кодом разработанной фейсбуком. Предназначена она для создания
+пользовательских интерфейсов. Основная философия реакта - компонентный подход, то есть весь интерфейс может быть
+разбит на минимальные функционирующие единицы => компоненты; и переиспользовать их (компоненты) можно в разы ускорить
+разработку.
+
+К особенностям относится: 
+- компоненты - используемые и переиспользуемые;
+- jsx облегчает чтение и написание кода
+- использование виртуального дома вместо реального
+- он универсальный, его можно использовать на сервере и на мобильных платформах с помощью React Native
+- он декларативный, разработчик может описать внешний вид разных элементов в любых доступных состояниях. Декларативный подход позволяет сохранить исходный код и сделать его наглядным.
+
 </details>
+
+---
+
+##### Компоненты
+<details>
+<summary> 2. Как отрендерить HTML код в React-компоненте? </summary>
+</details>
+
+<details>
+<summary> 3. Разница между управляемыми (controlled) и не управляемыми (uncontrolled) компонентами? </summary>
+</details>
+
+
+<details>
+<summary> 4. Что такое компонент-переключатель (Switching Component)? </summary>
+</details>
+
+
+<details>
+<summary> 5. Что такое распределенный компонент? </summary>
+</details>
+
+<details>
+<summary> 6. Что такое Компонент высшего порядка (Higher-Order Component/HOC)? </summary>
+</details>
+
+
+<details>
+<summary> 7. Методы жизненного цикла компонента в React? Стадии жизненного цикла компонента в React? </summary>
+</details>
+
+
+<details>
+<summary> 8. Разница между компонентом и контейнером? </summary>
+</details>
+
+
+<details>
+<summary> 9. Разница между классовым и функциональным компонентами? </summary>
+</details>
+
+
+
+---
+
+
 
 <details>
 <summary> 2. Что такое Virtual DOM? Как он работает с React? </summary>
@@ -24,17 +82,7 @@
 <summary> 4. Что такое PureComponent? </summary>
 </details>
 
-<details>
-<summary> 5. Что такое Компонент высшего порядка (Higher-Order Component/HOC)? </summary>
-</details>
 
-<details>
-<summary> 6. Разница между управляемыми (controlled) и не управляемыми (uncontrolled) компонентами? </summary>
-</details>
-
-<details>
-<summary> 7. Методы жизненного цикла компонента в React? Стадии жизненного цикла компонента в React? </summary>
-</details>
 
 <details>
 <summary> 8. Что такое React Reconciliation? </summary>
@@ -53,7 +101,7 @@
 </details>
 
 <details>
-<summary> 12. Что Такое JSX? /summary>
+<summary> 12. Что Такое JSX? </summary>
 </details>
 
 <details>
@@ -84,20 +132,13 @@
 <summary> 19. Что такое условный рендеринг (Conditional Rendering)? Как его выполнить? </summary>
 </details>
 
-<details>
-<summary> 20. Что такое компонент-переключатель (Switching Component)?
-</summary>
-</details>
 
 <details>
 <summary> 21. Разница между React и ReactDOM?
 </summary>
 </details>
 
-<details>
-<summary> 22. Разница между компонентом и контейнером?
-</summary>
-</details>
+
 
 <details>
 <summary> 23. Как React обрабатывает, или ограничивает использование пропсов определенного типа?
@@ -114,10 +155,6 @@
 
 <details>
 <summary> 26. Что такое «опрос» (Polling)? Как его реализовать в React? </summary>
-</details>
-
-<details>
-<summary> 27. Разница между элементом и компонентом? </summary>
 </details>
 
 <details>
@@ -149,9 +186,6 @@
 <summary> 34. Что такое инверсия наследования (Inheritance Inversion)? </summary>
 </details>
 
-<details>
-<summary> 35. Разница между классовым и функциональным компонентами? </summary>
-</details>
 
 <details>
 <summary> 36. Как в React реализовать двустороннее связывание данных? </summary>
@@ -190,9 +224,6 @@
 <summary> 44. Как реализовать однократное выполнение операции при начальном рендеринге? </summary>
 </details>
 
-<details>
-<summary> 45. Что такое распределенный компонент? </summary>
-</details>
 
 <details>
 <summary> 46. Расскажите о хуках useCallback(), useMemo(), useImperativeHandle(), useLayoutEffect()? </summary>
