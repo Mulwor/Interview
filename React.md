@@ -32,6 +32,10 @@
 Дополнительные вопросы: 2, 4
 
 <details>
+<summary> 12. Что Такое JSX? </summary>
+</details>
+
+<details>
 <summary> 2. Как отрендерить HTML код в React-компоненте? (Как вставить innerHtml в реакт)</summary>
 
 Основная идея в том, что например мы сделали запрос на сервер, а в ответ нам вернулась разметка его нужно отрисовать внутри компонента.
@@ -173,70 +177,26 @@ export default class Test extends PureComponent{
 ```
 </details>
 
+<details>
+<summary> 41. Что делает метод shouldComponentUpdate? </summary>
+</details>
 
 ---
 
-
+##### Дом
 
 <details>
 <summary> 2. Что такое Virtual DOM? Как он работает с React? </summary>
 </details>
 
 <details>
-<summary> 3. Для чего нужен атрибут key при рендере списков? </summary>
-</details>
-
-
-
-
-<details>
-<summary> 8. Что такое React Reconciliation? </summary>
-</details>
-
-<details>
-<summary> 9. Что такое портал (Portal)? </summary>
-</details>
-
-<details>
-<summary> 10. Что такое контекст (Context)? </summary>
-</details>
-
-<details>
-<summary> 11. Что такое React хуки (Hooks)? </summary>
-</details>
-
-<details>
-<summary> 12. Что Такое JSX? </summary>
-</details>
-
-<details>
-<summary> 13.Разница между состоянием(state) и пропсами(props)? </summary>
-</details>
-
-<details>
-<summary> 14. Что такое React Fiber? </summary>
-</details>
-
-<details>
-<summary> 15. Что такое фрагмент (Fragment)? Почему фрагмент лучше, чем div? </summary>
-</details>
-
-<details>
-<summary> 16. Что такое синтетические события в React? </summary>
-</details>
-
-<details>
 <summary> 17. Что такое React-ссылка (ref)? Как создать ссылку? </summary>
 </details>
+
 
 <details>
 <summary> 18. Разница между теневым (Shadow) и виртуальным (Virtual) DOM? </summary>
 </details>
-
-<details>
-<summary> 19. Что такое условный рендеринг (Conditional Rendering)? Как его выполнить? </summary>
-</details>
-
 
 <details>
 <summary> 21. Разница между React и ReactDOM?
@@ -244,117 +204,176 @@ export default class Test extends PureComponent{
 </details>
 
 
-
-<details>
-<summary> 23. Как React обрабатывает, или ограничивает использование пропсов определенного типа?
-</summary>
-</details>
-
-<details>
-<summary> 24. Что такое строгий режим в React? Его преимущества? </summary>
-</details>
-
-<details>
-<summary> 25. Что такое «бурение пропсов» (Prop Drilling)? Как его избежать? </summary>
-</details>
-
-<details>
-<summary> 26. Что такое «опрос» (Polling)? Как его реализовать в React? </summary>
-</details>
-
 <details>
 <summary> 28. Что такое ReactDOMServer?
 </summary>
 </details>
 
-<details>
-<summary> 29. Что такое предохранители (Error Boundaries)? </summary>
-</details>
+----
 
-<details>
-<summary> 30. Что такое «ленивая» (Lazy) функция? </summary>
-</details>
+##### Рендеринг
 
-<details>
-<summary> 31. Разница между рендерингом и монтированием? </summary>
-</details>
 
-<details>
-<summary> 32. Что такое сhildren? </summary>
-</details>
 
-<details>
-<summary> 33. Что такое события указателя (Pointer Events)? </summary>
-</details>
 
+
+
+
+
+
+
+
+----
 <details>
-<summary> 34. Что такое инверсия наследования (Inheritance Inversion)? </summary>
+<summary> 1. Для чего нужен атрибут key при рендере списков? </summary>
 </details>
 
 
 <details>
-<summary> 36. Как в React реализовать двустороннее связывание данных? </summary>
+<summary> 2. Рендер: Что такое React Reconciliation? </summary>
 </details>
 
 <details>
-<summary> 37. Разница между useEffect() и componentDidMount()?
+<summary> 3. Рендер: Что такое портал (Portal)? </summary>
+</details>
+
+<details>
+<summary> 4. Что такое контекст (Context)? </summary>
+</details>
+
+<details>
+<summary> 5. Что такое React хуки (Hooks)? </summary>
+</details>
+
+<details>
+<summary> 6. Разница между состоянием(state) и пропсами(props)? </summary>
+</details>
+
+<details>
+<summary> 7. Архитектура: Что такое React Fiber? </summary>
+</details>
+
+<details>
+<summary> 8. Что такое фрагмент (Fragment)? Почему фрагмент лучше, чем div? </summary>
+</details>
+
+<details>
+<summary> 9. Обработчик событий Что такое синтетические события в React? </summary>
+</details>
+
+
+
+<details>
+<summary> 10. Что такое условный рендеринг (Conditional Rendering)? Как его выполнить? </summary>
+</details>
+
+
+
+
+<details>
+<summary> 11. Как React обрабатывает, или ограничивает использование пропсов определенного типа?
 </summary>
 </details>
 
 <details>
-<summary> 38. Преимущества хуков? </summary>
+<summary> 12. Что такое строгий режим в React? Его преимущества? </summary>
 </details>
 
 <details>
-<summary> 39. Правила (ограничения) использования хуков? </summary>
+<summary> 13. Что такое «бурение пропсов» (Prop Drilling)? Как его избежать? </summary>
 </details>
 
 <details>
-<summary> 40. Что такое поднятие состояния вверх (Lifting State Up)? </summary>
-</details>
-
-<details>
-<summary> 41. Что делает метод shouldComponentUpdate? </summary>
-</details>
-
-<details>
-<summary> 42. Разница между createElement() и cloneElement()? </summary>
-</details>
-
-<details>
-<summary> 43. Что такое useReducer()? </summary>
-</details>
-
-<details>
-<summary> 44. Как реализовать однократное выполнение операции при начальном рендеринге? </summary>
+<summary> 14. Что такое «опрос» (Polling)? Как его реализовать в React? </summary>
 </details>
 
 
+
 <details>
-<summary> 46. Расскажите о хуках useCallback(), useMemo(), useImperativeHandle(), useLayoutEffect()? </summary>
+<summary> 15. Что такое предохранители (Error Boundaries)? </summary>
+</details>
+
+<details>
+<summary> 16. (Рендер) Что такое «ленивая» (Lazy) функция? </summary>
+</details>
+
+<details>
+<summary> 17. (Рендер). Разница между рендерингом и монтированием? </summary>
+</details>
+
+<details>
+<summary> 18. Что такое сhildren? </summary>
+</details>
+
+<details>
+<summary> 19. Что такое события указателя (Pointer Events)? </summary>
+</details>
+
+<details>
+<summary> 20. Что такое инверсия наследования (Inheritance Inversion)? </summary>
 </details>
 
 
 <details>
-<summary> 48. Зачем в setState() нужно передавать функцию? </summary>
+<summary> 21. Как в React реализовать двустороннее связывание данных? </summary>
 </details>
 
 <details>
-<summary> 49. Для чего предназначен метод registerServiceWorker() в React? </summary>
+<summary> 22. Разница между useEffect() и componentDidMount()?
+</summary>
 </details>
 
 <details>
-<summary> 50. Чем React Router отличается от обычной маршрутизации? </summary>
+<summary> 23. Преимущества хуков? </summary>
 </details>
 
 <details>
-<summary> 51. Какие хуки были добавлены в React Router версии 5? </summary>
+<summary> 24. Правила (ограничения) использования хуков? </summary>
+</details>
+
+<details>
+<summary> 25. Что такое поднятие состояния вверх (Lifting State Up)? </summary>
+</details>
+
+
+<details>
+<summary> 26. Разница между createElement() и cloneElement()? </summary>
+</details>
+
+<details>
+<summary> 27. Что такое useReducer()? </summary>
+</details>
+
+<details>
+<summary> 28. Как реализовать однократное выполнение операции при начальном рендеринге? </summary>
+</details>
+
+
+<details>
+<summary> 29. Расскажите о хуках useCallback(), useMemo(), useImperativeHandle(), useLayoutEffect()? </summary>
+</details>
+
+
+<details>
+<summary> 30. Зачем в setState() нужно передавать функцию? </summary>
+</details>
+
+<details>
+<summary> 31. Для чего предназначен метод registerServiceWorker() в React? </summary>
+</details>
+
+<details>
+<summary> 32. Чем React Router отличается от обычной маршрутизации? </summary>
+</details>
+
+<details>
+<summary> 33. Какие хуки были добавлены в React Router версии 5? </summary>
 </details>
   
 <details>
-<summary> 52. Как передавать пропсы в React Router? </summary>
+<summary> 34. Как передавать пропсы в React Router? </summary>
 </details>
 
 <details>
-<summary> 53. Что такое Reselect и как он работает? </summary>
+<summary> 35. Что такое Reselect и как он работает? </summary>
 </details>
