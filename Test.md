@@ -2,16 +2,7 @@
 (Завершенно)
 
 --- День №2 ---
-11	Why should we not update the state directly?
-12	What is the purpose of callback function as an argument of setState()?
-13	What is the difference between HTML and React event handling?
-14	How to bind methods or event handlers in JSX callbacks?
-15	How to pass a parameter to an event handler or callback?
-16	What are synthetic events in React?
-17	What are inline conditional expressions?
-18	What is "key" prop and what is the benefit of using it in arrays of elements?
-19	What is the use of refs?
-20	How to create refs?
+(Завершено)
 
 --- День №3 ---
 21	What are forward refs?
@@ -24,11 +15,11 @@
 28	What is the main goal of React Fiber?
 29	What are controlled components?
 30	What are uncontrolled components?
-
---- День №4 ---
 31	What is the difference between createElement and cloneElement?
 32	What is Lifting State Up in React?
 33	What are the different phases of component lifecycle?
+
+--- День №4 or №5 ---
 34	What are the lifecycle methods of React?
 35	What are Higher-Order components?
 36	How to create props proxy for HOC component?
@@ -36,8 +27,6 @@
 38	What is children prop?
 39	How to write comments in React?
 40	What is the purpose of using super constructor with props argument?
-
---- День №5 ---
 41	What is reconciliation?
 42	How to set state with a dynamic key name?
 43	What would be the common mistake of function being called every time the component renders?

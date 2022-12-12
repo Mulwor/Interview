@@ -209,3 +209,46 @@ A key— это специальный строковый атрибут, кот
 Создаются с помощью метода `React.createRef()` и прикрепляются к элементам React через ref атрибут.
 
 </details>
+
+
+
+<details>
+<summary> What are forward refs? </summary>
+</details>
+
+<details>
+<summary> Which is preferred option with in callback refs and findDOMNode()? </summary>
+</details>
+
+<details>
+<summary> Why are String Refs legacy? </summary>
+</details>
+
+<details>
+<summary> What is Virtual DOM? How Virtual DOM works? </summary>
+</details>
+
+<details>
+<summary> What is the difference between Shadow DOM and Virtual DOM? </summary>
+</details>
+
+<details>
+<summary> What is React Fiber? What is the main goal of React Fiber? </summary>
+</details>
+
+<details>
+<summary> What are controlled/uncontrolled components? </summary>
+</details>
+
+<details>
+<summary> What is the difference between createElement and cloneElement? </summary>
+</details>
+
+<details>
+<summary> What is Lifting State Up in React? </summary>
+</details>
+
+<details>
+<summary> What are the different phases of component lifecycle? </summary>
+</details>
+
