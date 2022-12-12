@@ -295,27 +295,12 @@ Redux
 306 Why do we use array destructuring (square brackets notation) in useState?
 307 What are the sources used for introducing hooks?
 308 How do you access imperative API of web components?
-309 What is formik?
 310 What are typical middleware choices for handling asynchronous calls in Redux?
 311 Do browsers understand JSX code?
 312 Describe about data flow in react?
 313 What is react scripts?
 314 What are the features of create react app?
-315 What is the purpose of renderToNodeStream method?
-316 What is MobX?
-317 What are the differences between Redux and MobX?
-318 Should I learn ES6 before learning ReactJS?
 319 What is Concurrent Rendering?
-320 What is the difference between async mode and concurrent mode?
-321 Can I use javascript urls in react16.9?
-322 What is the purpose of eslint plugin for hooks?
-323 What is the difference between Imperative and Declarative in React?
-324 What are the benefits of using typescript with reactjs?
-325 How do you make sure that user remains authenticated on page refresh while using Context API State Management?
-326 What are the benefits of new JSX transform?
-327 How is the new JSX transform different from old transform?
-328 How do you get redux scaffolding using create-react-app?
-329 What are React Server components?
 330 What is prop drilling?
 331 What is state mutation and how to prevent it?
 332 What is the difference between useState and useRef hook?
