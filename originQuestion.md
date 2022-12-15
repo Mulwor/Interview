@@ -213,31 +213,56 @@ A key— это специальный строковый атрибут, кот
 
 
 <details>
-<summary> What are forward refs? </summary>
+<summary> 19. Что такое React.forwardRef</summary>
+
+`React.forwardRef` - функция, которая позволяет передать рефы в качестве пропсов дочерному компоненту. 
+
+```
+const ButtonElement = React.forwardRef((props, ref) => (
+  <button ref={ref} className="CustomButton">
+    {props.children}
+  </button>
+));
+
+// Create ref to the DOM button:
+const ref = React.createRef();
+<ButtonElement ref={ref}>{"Forward Ref"}</ButtonElement>;
+```
+</details>
+
+
+<details>
+<summary> 20. Что такое виртуальный дом и как он работает? </summary>
+
+Виртуальный дом - копия реального дома, которая хранится в памяти и в дальнейшем синхронизируется с настоящим домом при помощи библиотеки: Reactdom в App.
+
+По поводу его работы, то всего 3 простых шага:
+1. Когда происходит изменения каких-то данных, весь пользовательский интерфейс повторно отображается в представлении Virtual DOM.
+2. После устанавливается разница между виртуальным домом и новом
+3. И как только это установка будет выполнена, реальный дом изменится
+
 </details>
 
 <details>
-<summary> Which is preferred option with in callback refs and findDOMNode()? </summary>
+<summary> 21. Какая разница между теневым домом и виртуальным домом? </summary>
+
+Они оба отвечают за скорость загрузки страницы, а также создают отдельный экземпляр реального дома, однако отличия их в том, что: 
+
+- Virtual-dom создает копию всего объекта DOM, в отличии от shadow-dom, которое создает небольшие фрагменты объекта DOM
+
+- Virtual-dom пытается избегать любых ненужных и дорогостоящих изменения в DOM. Он объединяет несколько изменений и выполняет один повторный рендеринг вместо множества мелких. Он добавляет поддерево элементов DOM в визуализацию документа вместо того, чтобы добавлять его в дерево DOM основного документа.
+
+- Shadow-dom полезен для области видимости CSS. Он гарантирует, что стили, созданные внутри одного элемента Shadow DOM, остаются изолированными и находятся в пределах своей области.
+
+- Shadow-dom реализует браузеры, а virtual-dom: библиотеки Реакт и вью
 </details>
 
 <details>
-<summary> Why are String Refs legacy? </summary>
+<summary> Что такое React Fiber? Какова его цель? </summary>
 </details>
 
 <details>
-<summary> What is Virtual DOM? How Virtual DOM works? </summary>
-</details>
-
-<details>
-<summary> What is the difference between Shadow DOM and Virtual DOM? </summary>
-</details>
-
-<details>
-<summary> What is React Fiber? What is the main goal of React Fiber? </summary>
-</details>
-
-<details>
-<summary> What are controlled/uncontrolled components? </summary>
+<summary> Что такое контролируемые и не контролируемые компоненты? </summary>
 </details>
 
 <details>
