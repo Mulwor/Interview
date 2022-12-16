@@ -5,9 +5,9 @@
 (Завершено)
 
 --- День №3 ---
+(Завершено)
 
-
---- День №4 or №5 ---
+--- День №4 ---
 34	What are the lifecycle methods of React?
 35	What are Higher-Order components?
 36	How to create props proxy for HOC component?
@@ -16,6 +16,9 @@
 39	How to write comments in React?
 40	What is the purpose of using super constructor with props argument?
 41	What is reconciliation?
+
+
+--- День №5
 42	How to set state with a dynamic key name?
 43	What would be the common mistake of function being called every time the component renders?
 44	Is lazy function supports named exports?
@@ -181,115 +184,20 @@ Redux
 ---
 
 Дополнительно
-206 What are the main features of reselect library?
-207 Give an example of reselect usage?
-209 Does the statics object work with ES6 classes in React?
-210 Can Redux only be used with React?
-211 Do you need to have a particular build tool to use Redux?
-212 How Redux Form initialValues get updated from state?
-213 How React PropTypes allow different type for one prop?
-214 Can I import an SVG file as react component?
-215 Why are inline ref callbacks or functions not recommended?
-216 What is render hijacking in React?
-217 What are HOC factory implementations?
-218 How to pass numbers to React component?
-219 Do I need to keep all my state into Redux? Should I ever use react internal state?
-220 What is the purpose of registerServiceWorker in React?
 221 What is React memo function?
 222 What is React lazy function?
-223 How to prevent unnecessary updates using setState?
-224 How do you render Array, Strings and Numbers in React 16 Version?
-225 How to use class field declarations syntax in React classes?
 226 What are hooks?
 227 What rules need to be followed for hooks?
-228 How to ensure hooks followed the rules in your project?
-229 What are the differences between Flux and Redux?
-230 What are the benefits of React Router V4?
 231 Can you describe about componentDidCatch lifecycle method signature?
-232 In which scenarios error boundaries do not catch errors?
-233 Why do you not need error boundaries for event handlers?
-234 What is the difference between try catch block and error boundaries?
-235 What is the behavior of uncaught errors in react 16?
-236 What is the proper placement for error boundaries?
-237 What is the benefit of component stack trace from error boundary?
-238 What is the required method to be defined for a class component?
-239 What are the possible return types of render method?
-240 What is the main purpose of constructor?
-241 Is it mandatory to define constructor for React component?
-242 What are default props?
-243 Why should not call setState in componentWillUnmount?
-244 What is the purpose of getDerivedStateFromError?
-245 What is the methods order when component re-rendered?
-246 What are the methods invoked during error handling?
-247 What is the purpose of displayName class property?
-248 What is the browser support for react applications?
-249 What is the purpose of unmountComponentAtNode method?
-250 What is code-splitting?
-251 What is the benefit of strict mode?
 252 What are Keyed Fragments?
-253 Does React support all HTML attributes?
-254 What are the limitations with HOCs?
-255 How to debug forwardRefs in DevTools?
-256 When component props defaults to true?
-257 What is NextJS and major features of it?
-258 How do you pass an event handler to a component?
-259 Is it good to use arrow functions in render methods?
-260 How to prevent a function from being called multiple times?
-261 How JSX prevents Injection Attacks?
-262 How do you update rendered elements?
-263 How do you say that props are read only?
-264 How do you say that state updates are merged?
 265 How do you pass arguments to an event handler?
-266 How to prevent component from rendering?
-267 What are the conditions to safely use the index as a key?
-268 Is it keys should be globally unique?
-269 What is the popular choice for form handling?
-270 What are the advantages of formik over redux form library?
-271 Why do you not required to use inheritance?
-272 Can I use web components in react application?
-273 What is dynamic import?
-274 What are loadable components?
-275 What is suspense component?
-276 What is route based code splitting?
 277 Give an example on How to use context?
 278 What is the purpose of default value in context?
 279 How do you use contextType?
-280 What is a consumer?
-281 How do you solve performance corner cases while using context?
-282 What is the purpose of forward ref in HOCs?
-283 Is it ref argument available for all functions or class components?
-284 Why do you need additional care for component libraries while using forward refs?
-285 How to create react class components without ES6?
-286 Is it possible to use react without JSX?
-287 What is diffing algorithm?
-288 What are the rules covered by diffing algorithm?
-289 When do you need to use refs?
-290 Is it prop must be named as render for render props?
-291 What are the problems of using render props with pure components?
-292 How do you create HOC using render props?
-293 What is windowing technique?
-294 How do you print falsy values in JSX?
-295 What is the typical use case of portals?
-296 How do you set default value for uncontrolled component?
-297 What is your favorite React stack?
 298 What is the difference between Real DOM and Virtual DOM?
-299 How to add Bootstrap to a react application?
-300 Can you list down top websites or applications using react as front end framework?
-301 Is it recommended to use CSS In JS technique in React?
-302 Do I need to rewrite all my class components with hooks?
-303 How to fetch data with React Hooks?
-304 Is Hooks cover all use cases for classes?
-305 What is the stable release for hooks support?
-306 Why do we use array destructuring (square brackets notation) in useState?
-307 What are the sources used for introducing hooks?
-308 How do you access imperative API of web components?
-310 What are typical middleware choices for handling asynchronous calls in Redux?
-311 Do browsers understand JSX code?
 312 Describe about data flow in react?
-313 What is react scripts?
-314 What are the features of create react app?
 319 What is Concurrent Rendering?
 330 What is prop drilling?
 331 What is state mutation and how to prevent it?
 332 What is the difference between useState and useRef hook?
-333 What are the Differences Between Functional and Class Component in React
+333 What are the Differences Between Functional and Class Component in React?

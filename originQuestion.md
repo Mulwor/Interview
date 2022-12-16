@@ -293,3 +293,22 @@ const ref = React.createRef();
 - Unmounting (размонтирование) => на  последнем этапе компонент не нужен и размонтируется из DOM браузера
 </details>
 
+
+
+34	What are the lifecycle methods of React?
+35	What are Higher-Order components?
+36	How to create props proxy for HOC component?
+37	What is context?
+38	What is children prop?
+39	How to write comments in React?
+40	What is the purpose of using super constructor with props argument?
+41	What is reconciliation?
+
+34 Каковы методы жизненного цикла React?
+35 Что такое компоненты высшего порядка?
+36 Как создать пропсы прокси для компонента HOC?
+37 Что такое контекст?
+38 Что такое детский реквизит?
+39 Как писать комментарии в React?
+40 Какова цель использования суперконструктора с аргументом реквизита?
+41 Что такое примирение?
