@@ -5,19 +5,7 @@
 (Завершено)
 
 --- День №3 ---
-21	What are forward refs?
-22	Which is preferred option with in callback refs and findDOMNode()?
-23	Why are String Refs legacy?
-24	What is Virtual DOM?
-25	How Virtual DOM works?
-26	What is the difference between Shadow DOM and Virtual DOM?
-27	What is React Fiber?
-28	What is the main goal of React Fiber?
-29	What are controlled components?
-30	What are uncontrolled components?
-31	What is the difference between createElement and cloneElement?
-32	What is Lifting State Up in React?
-33	What are the different phases of component lifecycle?
+
 
 --- День №4 or №5 ---
 34	What are the lifecycle methods of React?
