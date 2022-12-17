@@ -8,14 +8,8 @@
 (Завершено)
 
 --- День №4 ---
-34	What are the lifecycle methods of React?
-35	What are Higher-Order components?
-36	How to create props proxy for HOC component?
-37	What is context?
-38	What is children prop?
-39	How to write comments in React?
-40	What is the purpose of using super constructor with props argument?
-41	What is reconciliation?
+(Завершено)
+
 
 
 --- День №5
