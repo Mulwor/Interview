@@ -315,11 +315,6 @@ const ref = React.createRef();
 Он разработан для передачи данных от одного компонента к другой избегая промежуточные компоненты. Например: избегая пропс дриблинга. Чтобы создать контекст нужно написать React.createContext(), затем используя provider мы оборачиваем наш компонент, в нем мы также задать значения, а чтобы получить доступ необходимо обернуть в Consumer()
 </details>
 
-38 Что такое детский реквизит?
-40 Какова цель использования суперконструктора с аргументом реквизита?
-41 Что такое примирение?
-
-
 <details>
 <summary> 38.  Что такое props.children? </summary>
 
@@ -343,23 +338,28 @@ const ref = React.createRef();
 
 
 
-42	How to set state with a dynamic key name?
-43	What would be the common mistake of function being called every time the component renders?
-44	Is lazy function supports named exports?
-45	Why React uses className over class attribute?
-46	What are fragments?
-47	Why fragments are better than container divs?
-48	What are portals in React?
-49	What are stateless components?
-50	What are stateful components?
+День №1:
+46	What are fragments? Why fragments are better than container divs? Что такое фрагменты? / Почему фрагменты лучше контейнеров?
+48	What are portals in React? => Что такое порталы в React?
+49	What are stateful/stateless components? => Что такое компоненты без состояния / компоненты с отслеживанием состояния?
+50. Каковы приимущество и недостатки реакта?
+51. Что такое предохранетили error boundary?
+52. What is the purpose of render method of react-dom? - Какова цель рендеринга реакт-дом
+53. Что такое ReactDOMServer?
+What is the impact of indexes as keys? - Как влияют индексы на ключи?
+54. Как использовать декораторы в реакте
+55. How do you conditionally render components? =- Как условно визуализировать компоненты
+68	Why we need to be careful when spreading props on DOM elements?
+How you implement Server-Side Rendering or SSR?
 
-
-42 Как установить состояние с именем динамического ключа?
-43 В чем распространенная ошибка вызова функции каждый раз при рендеринге компонента?
-44 Поддерживает ли ленивая функция именованный экспорт?
-45 Почему React использует имя класса вместо атрибута класса?
-46 Что такое фрагменты?
-47 Почему фрагменты лучше контейнеров?
-48 Что такое порталы в React?
-49 Что такое компоненты без состояния?
-50 Что такое компоненты с отслеживанием состояния?
+День №2:
+1. What is a switching component? - Что такое switching компоненты
+2. What is strict mode in React? - Что такое strict mode в реакте
+3. What are React Mixins? - Что такое реакт-миксины
+4. Why should component names start with capital letter? - Почему компоненты должны начинаться с заглавной буквы
+5. How to loop inside JSX? - Как сделать цикл внутри jsx
+6. What is the difference between React and ReactDOM? - В чем отличие между реакт и реакт-дом
+98	How to use React label element? - Как использовать Реакт-лэйбл элеменит
+101 - В чем разница между setState и replaceState method
+103 - What is the recommended approach of removing an array element in react state? - Как удалить элемент из массива
+128 - What are render props? - Что такое рендер пропс
