@@ -371,7 +371,7 @@ a:hover	            1 + 10            => 11
 http://htmlbook.ru/css3/before
 
 `::selection` – позволяет применить стили к части документа, которая была выделена у пользователя. Например: http://htmlbook.ru/css/selection
-
+</details>
 
 <details>
 <summary>9. Что такое псевдоклассы и какие появились в html5? </summary>
