@@ -1,83 +1,5 @@
-// 1.
-let num = 1;
-function letUp() {
-  console.log(num);
-}
-letUp(); // ???
 
-// 2.
-function letDown() {
-  console.log(numFirst);
-}
-let numFirst = 1;
-letDown(); // ???
 
-// 3.
-let name1 = 'Alex';
-function sayHi() {
-  console.log(`Hello ${name1}`);
-}
-name1 = 'Hanna';
-sayHi(); // ???
-
-// 4.
-let anotherName = 'Alex';
-const foos = () => {
-  return () => {
-    return () => {
-      return () => {
-        console.log(anotherName);
-      };
-    };
-  };
-};
-foos()()()(); // ???
-
-// 5.
-function foo() {
-  const name = 'Alex';
-  return () => {
-    console.log(name);
-  };
-}
-let name = 'Hanna';
-const bar = foo();
-bar(); // ???
-
-// 6.
-function test1() {
-  let num1 = 1;
-  let num2 = 2;
-  return function () {
-    return num1 + num2;
-  };
-}
-
-let func1 = test1();
-console.log(func1());
-
-// 7.
-function test2() {
-  let num1 = 1;
-  let num2 = 2;
-  return function () {
-    return num1 + num2;
-  };
-}
-
-console.log(test2()());
-
-// 8.
-function test3() {
-  let num1 = 1;
-  return function () {
-    return num1 + num2;
-  };
-}
-
-let num2 = 2;
-let func3 = test3();
-console.log(func3());
 
 // 9.
 function test4() {
@@ -211,3 +133,4 @@ func5();
 func6();
 func5();
 func6();
+
