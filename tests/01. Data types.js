@@ -10,6 +10,7 @@ console.log(typeof Symbol('JS'))             // symbol
 console.log(typeof null)                     // object
 console.log(typeof function() {})            // function
 console.log(typeof NaN)                      // number
+console.log(typeof typeof 100)               // string
 
 
 console.log("---- Явное приведение типов, а также thruthy/fasly----")

@@ -1,5 +1,7 @@
 // TODO: переменные, замыкание, область видимости.
 
+
+
 // TODO: Уровень сложности: легко
 
 var specialVarFirst;
@@ -47,6 +49,8 @@ function sixthFuntion() {
 }
 sixthFuntion();
 console.log(sixthValue); // ?
+
+
 
 // TODO: Уровень сложности: легко+
 
@@ -126,6 +130,8 @@ console.log(easeF3());
 // TODO: Уровень сложности: нормально
 
 let normalLevelFirst = 10;
+// Immediately Invoked Function Expression - это JS-функции, которые выполняется сразу же после объявления. Эта функция анонимна (у нее нет имени) и 
+// запускается немедленно. Когда не было лексического окружение на уровне блока кода, он давал простой способ изолировать переменную внутри функции.
 (function normalFunctionFirst() {
   if (normalLevelFirst === 10) {
     let normalLevelFirst = 11;
