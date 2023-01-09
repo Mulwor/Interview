@@ -80,3 +80,26 @@ function openOrSenior(data){
 openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]])             // ['Open', 'Senior', 'Open', 'Senior']
 openOrSenior([[3, 12],[55,1],[91, -2],[53, 23]])                // ['Open', 'Open', 'Open', 'Open']
 openOrSenior([[59, 12],[55,-1],[12, -2],[12, 12]])              // ['Senior', 'Open', 'Open', 'Open']
+
+
+
+
+// Первый элемент - сколько сидят, второй элемента - сколько выходят. Посчитать сколько
+// в конечном итоге осталось человек в автобусе. 
+var number = function(busStops){
+    return busStops.reduce((rem, [on, off]) => rem + on - off, 0)
+    // rem + on => 18; rem - off => -13; rem + on - off => 15
+}
+
+// Мое решение - не лучшее 
+var number = function(busStops){
+    let whoSit = busStops.map(([sit, exit]) => (sit)).reduce((a,b) => a + b)
+    let whoLeft = busStops.map(([sit, exit]) => (exit)).reduce((a,b) => a + b)
+    return whoSit - whoLeft
+}
+number([[10,0],[3,5],[5,8]])                        // 5
+number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]])    // 17
+number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]])      // 21
+number([[0,0]])                                     // 0
+// Дан список целых чисел, определить, является ли сумма его элементов четной или нечетной.
+// Дайте ответ в виде сопоставления строк "odd"или "even". Если входной массив пуст, рассматривайте его как: [0](массив с нулем).

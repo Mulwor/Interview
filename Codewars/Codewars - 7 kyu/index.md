@@ -1,8 +1,0 @@
-Array:
-
-
-String: 
-
-
-
-Number
