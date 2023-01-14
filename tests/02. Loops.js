@@ -20,3 +20,18 @@ function divisors(integer) {
 divisors(12); // should return [2,3,4,6]
 divisors(25); // should return [5]
 divisors(13); // should return "13 is prime"
+
+
+// Уровень сложный
+function SeriesSum(n) {
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    sum += 1 / (3 * i + 1);
+  }
+  return sum.toFixed(2);
+}
+
+SeriesSum(1)      // "1.00"
+SeriesSum(2)      // "1.25"
+SeriesSum(3)      // "1.39"
+SeriesSum(4)      // "1.49"
