@@ -23,3 +23,7 @@ array.indexOf(2, -3);        // 0
 const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 console.log(animals.slice(2));    // ["camel", "duck", "elephant"]
 console.log(animals.slice(2, 4)); // ["camel", "duck"]
+
+
+`Array.from()` => создаёт новый экземпляр Array из массивоподобного (это объект, который структурно похож на массив) или итерируемого объекта.
+
