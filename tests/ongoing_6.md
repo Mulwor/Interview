@@ -1,10 +1,3 @@
-Типы данных в JavaScript?
-Разница между == и === (нестрогое/строгое равенство)?
-Что такое Strict mode в JavaScript?
-Разница между function declaration и function expression?
-Разница между null и undefined?
-Типы таймеров в JavaScript?
-Что такое поднятие (Hoisting)?
 Что такое область видимости (Scope)?
 Разница между var, let и const?
 Что такое замыкание (Closure)?
