@@ -1,6 +1,6 @@
 ### Beginner
 
-<details>
+<>
 <summary> 1. Типы данных в JavaScript? </summary>
 В JavaScript существует 8 типов данных, их можно разделить на примитивные и ссылочные. К примитивным относятся следующие типы: 
 
@@ -21,8 +21,6 @@
 А к ссылочному относится:
 
 - `object`. А определить тип данных можно с помощью typeOf.
-
-</details>
 
 <details>
 <summary>Question: В чем отличие между null и undefined?</summary>
