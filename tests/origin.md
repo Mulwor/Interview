@@ -140,13 +140,28 @@ III. Операторы сравнения:
 
 #### III. Циклы и инструкции
 
-Что такое выражения (expression) и инструкции (statement) в JavaScript?
+<details>
+<summary>Что такое выражения (expression) и инструкции (statement) в JavaScript?</summary>
 
-Что такое switch/case? Правила использования switch/case?
+</details>
 
-Для чего используется цикл for…of?
 
-Разница между .forEach() и .map()?
+<details>
+<summary>Что такое switch/case? Правила использования switch/case?</summary>
+
+</details>
+
+
+<details>
+<summary>Для чего используется цикл for…of?</summary>
+
+</details>
+
+<details>
+<summary> Разница между .forEach() и .map()?</summary>
+
+</details>
+
 
 ---
 
