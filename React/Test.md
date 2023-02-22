@@ -1,22 +1,4 @@
 
----
-
-React Router
-
-129 What is React Router?
-130 How React Router is different from history library?
-131 What are the <Router> components of React Router v4?
-132 What is the purpose of push and replace methods of history?
-133 How do you programmatically navigate using React router v4?
-134 How to get query parameters in React Router v4
-135 Why you get "Router may have only one child element" warning?
-136 How to pass params to history.push method in React Router v4?
-137 How to implement default or NotFound page?
-138 How to get history on React Router v4?
-139 How to perform automatic redirect after login?
-
----
-
 Redux
 
 152 What is Flux?
