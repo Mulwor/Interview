@@ -209,76 +209,72 @@ for ... of - для перебора массива, перебираются к
 #### IV. Методы
 
 ##### Number
+
 <details>
-<summary>Как сгенерировать случайное число в JavaScript?</summary>
+<summary>Числовые методы</summary>
+
+1. Как получить минимальное число? - Math.min();
+2. Как получить максимальное число? - Math.mix();
+3. Как сгенерировать случайное число в JavaScript? => Math.random();
+4. Как округлить число в ближайшему целому? => Math.round(); 
+5. Как округлить число в меньшую степень? => Math.floor();
+6. Как округлить число в большую степень? => Math.ceil();
+7. Как удалить числа после точки? => Math.trunc();
 
 </details>
-
 
 ##### String
 
 <details>
-<summary> Методы строк в JavaScript?  </summary>
-</details>
+<summary> Строковые методы </summary>
 
-<details>
-<summary> Для чего используются методы .padStart() и .padEnd()?  </summary>
-</details>
+1. String.prototype.padStart() => 
+2. String.prototype.padEnd() => 
+3. String.prototype.startsWith() =>
+4. String.prototype.endsWith() => 
+5. String.prototype.replaceAll() => 
+6. String.prototype.trim() => удаляет пробельные символы как в начале так и в конце строки
 
-<details>
-<summary> Для чего используются методы .startsWith() и .endsWith()?  </summary>
-</details>
 
-<details>
-<summary> Как в JavaScript удалять пробельные символы в начале и в конце строки?  </summary>
-</details>
-
-<details>
-<summary>  Для чего используется метод .replaceAll()? </summary>
 </details>
 
 ##### Array
 
 <details>
-<summary>  Методы массивов в JavaScript? </summary>
+<summary>  Массивные методы </summary>
+
+Array.isArray() => проверяет является ли значение массивом
+
+Array.prototype.slice()
+Array.prototype.splice()
+
+Разница между ними заключается в 
+
+Array.prototype.find() -
+Array.prototype.findIndex() -
+Array.prototype.indexOf() -
+
+
+Array.prototype.push() -
+Array.prototype.pop() -
+Array.prototype.shift() -
+Array.prototype.unshift() -
+
+
+Array.prototype.some() -
+Array.prototype.every() - 
+
+Разница между ними
+
+Array.prototype.includes() - 
+Array.prototype.flat() - 
+Array.prototype.flatMaP() - 
 </details>
 
-<details>
-<summary>  Разница между методами .slice() и .splice()? </summary>
-</details>
 
-<details>
-<summary> Как работают методы .find(), .findIndex() и .indexOf()?  </summary>
-</details>
-
-
-<details>
-<summary> Как проверить, является ли значение массивом?  </summary>
-</details>
-
-
-<details>
-<summary> Разница между методами .push(), .pop(), .shift() и .unshift()? </summary>
-</details>
-
-<details>
-<summary> Разница между .some() и .every()?  </summary>
-</details>
 
 <details>
 <summary> Назовите способы преобразования массива в объект?  </summary>
-</details>
-
-
-<details>
-<summary> Для чего используется метод .includes()?  </summary>
-
-</details>
-
-
-<details>
-<summary> Для чего используются методы .flat() и .flatMap()?  </summary>
-
 </details>
 
 
