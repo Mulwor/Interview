@@ -47,11 +47,12 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const found = arr.find(el => el > 5)
 console.log(found)
 
+
+// ===============
+
 const arr1 = ["John", "Artur", "Tommy", "Finn"];
 const foundIndex = arr1.findIndex(el => el == "Artur")              // 1 
 console.log(foundIndex)
-
-
 
 function isWantedGuest(element, index, array) {
     const guestName = 'Лиза'
@@ -64,7 +65,39 @@ const meetingGuests = [ 'Даня', 'Егор', 'Арсений' ]
 console.log(partyGuests.findIndex(isWantedGuest))           // 3 (так как partyGuests[3] -> 'Лиза')
 console.log(meetingGuests.findIndex(isWantedGuest))         // -1 (совпадений нет)
 
+// ===============
 
 const arr2 =  ["John", "Artur", "Tommy", "Finn"];
 const indexalOf = arr2.indexOf("Artur")
 console.log(indexalOf)
+
+
+// ! Some, every
+function isBiggerThan10(element, index, array) {
+    return element > 10;
+}
+[2, 5, 8, 1, 4].some(isBiggerThan10);                // false
+[12, 5, 8, 1, 4].some(isBiggerThan10);               // true
+[4, 15, 1, 2, 0].some(isBiggerThan10);               // true
+
+// Или
+[2, 5, 8, 1, 4].some(elem => elem > 10);             // false
+[12, 5, 8, 1, 4].some(elem => elem > 10);            // true
+
+
+const array = [1, 2, 3, 4, 5];
+const even = (element) => element % 2 === 0;
+console.log(array.some(even));                      // true
+
+
+// ==============
+
+function isBigEnough(element, index, array) {
+    return element >= 10;
+}
+[12, 5, 8, 130, 44].every(isBigEnough);                 // false
+[12, 54, 18, 130, 44].every(isBigEnough);               // true
+
+// Или
+[12, 5, 8, 130, 44].every(elem => elem >= 10);          // false
+[12, 54, 18, 130, 44].every(elem => elem >= 10);        // true
