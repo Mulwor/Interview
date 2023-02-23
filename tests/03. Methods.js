@@ -101,3 +101,22 @@ function isBigEnough(element, index, array) {
 // Или
 [12, 5, 8, 130, 44].every(elem => elem >= 10);          // false
 [12, 54, 18, 130, 44].every(elem => elem >= 10);        // true
+
+
+
+// ! .forEach(), .map()
+const array1 = ['a', 'b', 'c'];
+array1.forEach(element => console.log(element));        // a, b, c
+array1.map(element => console.log(element))             // a, b, c
+
+let arr4 = [1, 2, 3, 4, 5];
+let result = arr4.map((elem) => elem * 2);
+console.log(result);                                    // 2, 4, 6, 8, 10
+
+
+// ! .includes()
+[1, 2, 3].includes(2);                                  // true
+[1, 2, 3].includes(4);                                  // false
+[1, 2, 3].includes(3, 3);                               // false
+[1, 2, 3].includes(3, -1);                              // true
+[1, 2, NaN].includes(NaN);                              // true

@@ -266,23 +266,21 @@ for ... of - для перебора массива, перебираются к
 [12, 54, 18, 130, 44].every(elem => elem >= 10);        // true
 ```
 
-
-9. `Array.prototype.forEach()` - 
-10. `Array.prototype.map()` - 
-
-Разница между .forEach() и .map()? => Основное различие между .forEach и .map() состоит в том, что .map() возвращает новый массив, а .forEach меняет исходный. Если мы используем map(), то мы можем использовать и другие методы, а в forEach такого нет, так как он возвращает undefined.
+9. `Array.prototype.forEach()` и `Array.prototype.map()` => отличие заключается в том, что forEach() меняет исходный массив, а map возвращает новый. Еще одним отличиям является то, что если мы используем .map, то мы можем использовать
+и другие методы. 
 
 
+10. `Array.prototype.includes()` - определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого true или false.
 
-Array.prototype.push() -
-Array.prototype.pop() -
-Array.prototype.shift() -
-Array.prototype.unshift() -
+11. Array.prototype.push() -
+12. Array.prototype.pop() -
+13. Array.prototype.shift() -
+14. Array.prototype.unshift() -
 
-Array.prototype.includes() - 
+15. Array.prototype.flat() - 
+16. Array.prototype.flatMaP() - 
 
-Array.prototype.flat() - 
-Array.prototype.flatMaP() - 
+
 
 
 
@@ -343,5 +341,6 @@ function x2(p1, p1) {};   // This will cause an error
 <details>
 <summary> 4. Что такое шаблонные литералы (Template Literals)?</summary>
 
+Шаблонные литаралы - это обратные кавычки, внутри обратные кавычек мы можем с помощью знака доллара и фигурными скобками (${выражение}).
 </details>
 ---
