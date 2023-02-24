@@ -120,3 +120,51 @@ console.log(result);                                    // 2, 4, 6, 8, 10
 [1, 2, 3].includes(3, 3);                               // false
 [1, 2, 3].includes(3, -1);                              // true
 [1, 2, NaN].includes(NaN);                              // true
+
+
+
+// ! .Push(), .pop(), .shift(), .unshift()
+let usePush = [1, 2, 3, 4, 5, 6, 7, 8];
+let valuePush = usePush.push(1)
+console.log(usePush)                        // [1, 2, 3, 4, 5, 6, 7, 8, 1]
+console.log(usePush.length)                 // Новая длина: 9
+
+
+let usePop = [1, 2, 3, 4, 5, 6, 7, 8];
+let valuePop = usePop.pop(1)
+console.log(usePop)                        // [1, 2, 3, 4, 5, 6, 7]
+console.log(valuePop)                      // Было удалено число: 8
+console.log(usePop.length)                 // Новая длина: 7
+
+
+let useShift = [1, 2, 3, 4, 5, 6, 7, 8];
+let valueShift = useShift.shift(1)
+console.log(useShift)                        // [2, 3, 4, 5, 6, 7, 8]
+console.log(valueShift)                      // Было удалено число 7 
+console.log(useShift.length)                 // Новая длина: 7
+
+
+let useUnShift = [1, 2, 3, 4, 5, 6, 7, 8];
+let valueUnShift = useUnShift.unshift(1, 5)
+console.log(useUnShift)                        // [1, 5, 1, 2, 3, 4, 5, 6, 7, 8, 1]
+console.log(useUnShift.length)                 // Новая длина: 9
+
+
+
+// ! .flat(), flatMap();
+let flat1 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+console.log(flat1.flat(1));                          // [1, 2, 3, 4 [5, 6, [7, 8, [9, 10]]]]
+console.log(flat1.flat(3))                           // [1, 2, 3, 4, 5, 6, 7, 8, [9, 10]]
+console.log(flat1.flat(4))                           // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(flat1.flat(Infinity))                    // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  
+
+let array2 = [1, 2, 3, 4];
+array2.map(x => [x * 2]);                           // [[2], [4], [6], [8]]
+array2.flat()                                       // [2, 4, 6, 8]
+
+array2.flatMap(x => [x * 2]);                       // [2, 4, 6, 8]
+
+// ! выравнивается только один уровень
+array2.flatMap(x => [[x * 2]]);                     // [[2], [4], [6], [8]]
