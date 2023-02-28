@@ -18,14 +18,26 @@ switch (a) {
 }
 
 
-// ! Цикл: for let
+// ====================================================================
 
+// ! Цикл: for let, пример №1 
 for (let i = 0; i < 3; i++) {
     // 0, 1, 2
     alert(i)
 }
 
+// Пример №2
+for (let i = 1; i < 5; i++) {
+  // 1, 2, 4
+  if (i === 3) continue
+  console.log(i)
+}
+
+
+// ====================================================================
+
 // ! Цикл for ... in - для перебора объектов
+// Пример №1 
 let user = {
   name: "John",
   age: 30,
@@ -37,13 +49,44 @@ for (let key in user) {
   alert( user[key] );    // John, 30, true
 }
 
+// Пример №2
+const person = {
+  name: "John",
+  age: 30
+}
+
+for (const item in person) {
+  // name, age
+  console.log(item)
+}
+
+
+
 // ! Цикл for ... of - для перебор массиво 
 let iterable = [10, 20, 30];
 
 for (let value of iterable) {
-  value += 1;
-  console.log(value);      // 11 => 21 => 31
+  // 10, 20, 30
+  console.log(value);      
 }
+
+
+
+// ! Разница между for...in и for...of
+const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]                                 
+
+for (let item in myLifeSummedUp) {
+  // 0, 1, 2, 3
+  console.log(item)
+}
+
+for (let item of myLifeSummedUp) {
+  // ["☕", "💻", "🍷", "🍫"]
+  console.log(item)
+}
+
+
+
 
 
 // ! Цикл while...do while
