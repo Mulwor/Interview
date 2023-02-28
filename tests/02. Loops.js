@@ -1,7 +1,5 @@
 // Циклы и инструкции: 
 
-
-
 // ! switch(), case .., break,
 let a = 2 + 2;
 
@@ -20,12 +18,46 @@ switch (a) {
 }
 
 
+// ! Цикл: for let
+
+for (let i = 0; i < 3; i++) {
+    // 0, 1, 2
+    alert(i)
+}
+
+// ! Цикл for ... in - для перебора объектов
+let user = {
+  name: "John",
+  age: 30,
+  isAdmin: true
+};
+
+for (let key in user) {
+  alert( key );          // name, age, isAdmin
+  alert( user[key] );    // John, 30, true
+}
+
+// ! Цикл for ... of - для перебор массиво 
+let iterable = [10, 20, 30];
+
+for (let value of iterable) {
+  value += 1;
+  console.log(value);      // 11 => 21 => 31
+}
 
 
+// ! Цикл while...do while
+let i = 3;
+while (i) {       // когда i будет равно 0, условие станет ложным, и цикл остановится
+  alert( i );
+  i--;
+}
 
-
-
-
+let i1 = 0;
+do {
+  alert( i1 );
+  i++;
+} while (i1 < 3);
 
 
 
