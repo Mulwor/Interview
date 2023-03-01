@@ -17,66 +17,38 @@ switch (a) {
     alert( "Нет таких значений" );
 }
 
+// * ====================================================================
 
-// ====================================================================
+// ! for...in; for...of 
 
-// ! Цикл: for let, пример №1 
-for (let i = 0; i < 3; i++) {
-    // 0, 1, 2
-    alert(i)
-}
+// ! Заметка №1 - for ... in => работает с объектами, он выводит ключи, но не значения. Чтобы вызвать значения 
+// ! необходимо использовать квадратные скобки и вызвать ключи
 
-// Пример №2
-for (let i = 1; i < 5; i++) {
-  // 1, 2, 4
-  if (i === 3) continue
-  console.log(i)
-}
-
-
-// ====================================================================
-
-// ! Цикл for ... in - для перебора объектов
-// Пример №1 
-let user = {
-  name: "John",
-  age: 30,
+const uniqueUser = {
+  name: "Valera",
+  age: 24,
   isAdmin: true
-};
-
-for (let key in user) {
-  alert( key );          // name, age, isAdmin
-  alert( user[key] );    // John, 30, true
 }
 
-// Пример №2
-const person = {
-  name: "John",
-  age: 30
+for (const key in iterable) {
+  console.log(key);                       // name, age, isAdmin
+  console.log(uniqueUser[key]);           // Valera, 24, true
 }
 
-for (const item in person) {
-  // name, age
+
+// ! Заметка №2 - for ... of => работает больше с массивом, он выводит уже внутренности
+let iterable = [10, 20, 30];
+
+for (const item in iterable) {
   console.log(item)
 }
 
 
+// ! Заметка №3 - Если мы сравним массив и проверим их, то выяснитьсяь, что {0: "☕", 1: "💻", 2: "🍷", 3: "🍫"}
+// ! for...in будет вызывать индексы, а for...of уже внутренности.
 
-// ! Цикл for ... of - для перебор массиво 
-let iterable = [10, 20, 30];
-
-for (let value of iterable) {
-  // 10, 20, 30
-  console.log(value);      
-}
-
-
-
-// ! Разница между for...in и for...of
 const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]                                 
-
 for (let item in myLifeSummedUp) {
-  // 0, 1, 2, 3
   console.log(item)
 }
 
@@ -86,8 +58,7 @@ for (let item of myLifeSummedUp) {
 }
 
 
-
-
+// * ====================================================================
 
 // ! Цикл while...do while
 let i = 3;
@@ -103,7 +74,7 @@ do {
 } while (i1 < 3);
 
 
-
+// * ====================================================================
 
 
 // Уровень средний
@@ -121,9 +92,9 @@ function divisors(integer) {
   
 
 
-divisors(12); // should return [2,3,4,6]
-divisors(25); // should return [5]
-divisors(13); // should return "13 is prime"
+divisors(12);             // should return [2,3,4,6]
+divisors(25);             // should return [5]
+divisors(13);             // should return "13 is prime"
 
 
 // Уровень сложный
@@ -135,7 +106,7 @@ function SeriesSum(n) {
   return sum.toFixed(2);
 }
 
-SeriesSum(1)      // "1.00"
-SeriesSum(2)      // "1.25"
-SeriesSum(3)      // "1.39"
-SeriesSum(4)      // "1.49"
+SeriesSum(1)              // "1.00"
+SeriesSum(2)              // "1.25"
+SeriesSum(3)              // "1.39"
+SeriesSum(4)              // "1.49"

@@ -1,3 +1,23 @@
+// ! Math
+
+// ! Метод Math.min() возвращает наименьшее из нуля или более чисел.
+
+console.log(Math.min(40, 20, 42, 100, 67));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ! String method
 const str = 'test';
 str.padStart(10);                                    // "      test"
