@@ -276,7 +276,7 @@ for ... of - для перебора массива, перебираются к
 </details>
 
 <details>
-<summary>Array method: isArray; find, findIndex, indexOf; push; shift; pop; unshift</summary>
+<summary>Array method: isArray(); find(), findIndex(), indexOf(); push(); shift; pop; unshift(); forEact(); map()</summary>
 
 1. `Array.isArray()` => проверяет является ли значение массивом
 
