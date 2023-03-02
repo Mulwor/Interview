@@ -276,7 +276,7 @@ for ... of - для перебора массива, перебираются к
 </details>
 
 <details>
-<summary>Array method: isArray; slice and splice; find, findIndex, indexOf</summary>
+<summary>Array method: isArray; find, findIndex, indexOf; push; shift; pop; unshift</summary>
 
 1. `Array.isArray()` => проверяет является ли значение массивом
 
@@ -314,6 +314,7 @@ for ... of - для перебора массива, перебираются к
 10. `Array.prototype.includes()` - определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого true или false.
 
 Данные методы меняют исходный массив - модифириует массив
+
 11. `Array.prototype.push()` - добавляет элементы в конец массива и возвращает новую длину массива.
 
 12. `Array.prototype.pop()` - удаляет из массива последний элемент и возвращает его значение.
