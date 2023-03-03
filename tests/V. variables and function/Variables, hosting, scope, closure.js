@@ -1,54 +1,11 @@
 // TODO: переменные, замыкание, область видимости.
 
-
-
 // TODO: Уровень сложности: легко
 
 var specialVarFirst;
 console.log(specialVarFirst); // ?
 console.log(specialVarSecond); // ?
 var specialVarSecond = 1;
-
-let specialLetFirst = 'Good morning!!';
-specialLetFirst.name = 'John';
-console.log(specialLetFirst.name); // ?
-
-const firstExample = 5;
-firstExample = 10;
-console.log(firstExample); // ?
-
-let secondExample = 1;
-function secondFunction() {
-  console.log(num);
-}
-secondFunction(); // ?
-
-function thirdFunction() {
-  console.log(thirdExample);
-}
-let thirdExample = 1;
-thirdFunction(); // ?
-
-let fourthExample = 'Alex';
-function fourthFunction() {
-  console.log(`Hello ${fourthExample}`);
-}
-fourthExample = 'Hanna';
-fourthFunction(); // ?
-
-const fivethExample = {
-  name: 'Вася',
-};
-fivethExample.name = 'Петя';
-fivethExample = 5;
-console.log(fivethExample); // ?
-
-var sixthValue = 1;
-function sixthFuntion() {
-  sixthValue = 2;
-}
-sixthFuntion();
-console.log(sixthValue); // ?
 
 
 

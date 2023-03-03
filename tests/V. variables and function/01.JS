@@ -1,31 +1,6 @@
 // ! Именования переменных и функций
 
-var number  = 10; 
-console.log(number);        // 10
-number = 22; 
-console.log(number);        // 20
-
-
-var weight = 10;
-if (weight > 8) {
-    var kilograms = `Вес ${weight} кг`;
-    console.log(kilograms);
-}
-
-// ! Разница между var, let, const
-
-var number  = 10; 
-console.log(number);        // 10
-number = 22; 
-console.log(number);        // 20
-
-
-var weight = 10;
-if (weight > 8) {
-    // У варов нет блочной области видимости он переходит в глобальную область видимости. 
-    var kilograms = `Вес ${weight} кг`;
-    console.log(kilograms);
-}
+// ! 
 
 // ! Как передаются параметры в функцию по ссылке по значению 
 
