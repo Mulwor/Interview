@@ -1,6 +1,7 @@
 /* 
         * Темы
     ! Variables: let, var, const
+    ! Временная мертвая зона
 
 
 */
@@ -70,3 +71,33 @@ function sixthFuntion() {
 }
 sixthFuntion();
 console.log(sixthValue);                    // * 2
+
+
+
+// TODO => Primer с временной мертвой зоной
+
+// * Пример №1 
+console.log(foo);                           // * undefined
+var foo = 123;
+
+// * Пример №2 
+console.log(foo);                           // * Error
+let foo = 123;
+
+// * Пример №3
+let age = 50;
+function printAge() {
+  console.log(age);
+  let age = 30;
+}
+
+printAge();                                 // * Error
+
+// * Пример №4
+console.log(animal);                        // * Uncaught ReferenceError: animal is not defined
+
+if(true) {
+    console.log(animal);                    // * Uncaught ReferenceError: Cannot access  'animal' before initialization
+    const animal = "Parrot"
+    console.log(animal);                    // * "Parrot"
+}

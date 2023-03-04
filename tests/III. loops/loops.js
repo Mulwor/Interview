@@ -47,7 +47,8 @@ for (const item in iterable) {
 // ! Заметка №3 - Если мы сравним массив и проверим их, то выяснитьсяь, что {0: "☕", 1: "💻", 2: "🍷", 3: "🍫"}
 // ! for...in будет вызывать индексы, а for...of уже внутренности.
 
-const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]                                 
+const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]          
+                       
 for (let item in myLifeSummedUp) {
   console.log(item)
 }
