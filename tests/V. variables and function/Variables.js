@@ -1,5 +1,5 @@
 /* 
-    * Темы: 
+        * Темы
     ! Variables: let, var, const
 
 
@@ -12,9 +12,9 @@ console.log(number);        // 20
 
 var weight = 10;
 if (weight > 8) {
-    // У варов нет блочной области видимости он переходит в глобальную область видимости. 
+    //*  У варов нет блочной области видимости он переходит в глобальную область видимости. 
     var kilograms = `Вес ${weight} кг`;
-    console.log(kilograms);
+    console.log(kilograms);                  // * Вес: 10 кг.
 }
 
 // TODO => Primer
@@ -54,7 +54,7 @@ function fourthFunction() {
 fourthExample = 'Hanna';
 fourthFunction();                           // * "Hello Hanna"
 
-// TODO => Primer
+// TODO => Primer с объектом
 
 const fivethExample = {
     name: 'Вася',
@@ -66,7 +66,7 @@ console.log(fivethExample);                 // * "Петя"
 
 var sixthValue = 1;
 function sixthFuntion() {
-  sixthValue = 2;
+  sixthValue = 2;                           // * Сначала присваивается значение 1, а затем 2
 }
 sixthFuntion();
 console.log(sixthValue);                    // * 2
