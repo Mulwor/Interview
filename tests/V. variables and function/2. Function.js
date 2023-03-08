@@ -5,6 +5,9 @@
     ! 3. Как передаются параметры в функцию по ссылке по значению
     ! 4. Что такое чистая функция
 
+
+    ! 7. Что такое мемоизация. Реализуйте базовую логику функции для мемоизации
+
 */
 
 // ! Разница между function declaration и function expression
@@ -89,3 +92,24 @@ function calculateGST( productPrice ) { return productPrice * (tax / 100) + prod
 tax = 24 
 // * Зависит от внешней переменной и при передаче одного и того же аргумента поттенциально
 // * может возвращать разные результаты.
+
+
+
+// ! 7. Мемоизация
+const memoize = (fn) => {
+  const cache = {}
+  return function(param) {
+    if (cache[param]) {
+      return cache[param];
+    } else {
+      const result = fn(param)
+      cache[param] = result;
+      return result;
+    }
+  }
+}
+
+const toUpper = (str = "") => str.toUpperCase();
+const toMemo = memoize(toUooer);
+toUpperMemoize("Yauhem")
+toUpperMemoize("Yauhem")
