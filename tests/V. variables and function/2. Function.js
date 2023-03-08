@@ -4,9 +4,10 @@
     ! 2. IIFE
     ! 3. Как передаются параметры в функцию по ссылке по значению
     ! 4. Что такое чистая функция
-
-
-    ! 7. Что такое мемоизация. Реализуйте базовую логику функции для мемоизации
+    ! 5. Разница между обычными функциями и стрелочными?
+    ! 6. Что обозначает this в JavaScript?
+    ! 7. Разница между .call(), .apply() и bind()?
+    ! 8. Что такое мемоизация. Реализуйте базовую логику функции для мемоизации
 
 */
 
@@ -113,3 +114,34 @@ const toUpper = (str = "") => str.toUpperCase();
 const toMemo = memoize(toUooer);
 toUpperMemoize("Yauhem")
 toUpperMemoize("Yauhem")
+
+
+// * Другой пример
+
+// простая чистая функция, которая возвращает сумму аргумента и 10
+const va = (n) => (n + 10);
+console.log('Simple call', va(3));
+// простая функция, принимающая другую функцию и
+// возвращающая её же, но с мемоизацией
+const dd = (fn) => {
+  let cache = {};
+  return (...args) => {
+    let n = args[0];  // тут работаем с единственным аргументом
+    if (n in cache) {
+      console.log('Fetching from cache');
+      return cache[n];
+    }
+    else {
+      console.log('Calculating result');
+      let result = fn(n);
+      cache[n] = result;
+      return result;
+    }
+  }
+}
+// создание функции с мемоизацией из чистой функции 'va'
+const dddva = dd(va);
+console.log(dddva(3));  // вычислено
+console.log(dddva(3));  // взято из кэша
+console.log(dddva(4));  // вычислено
+console.log(dddva(4));  // взято из кэша

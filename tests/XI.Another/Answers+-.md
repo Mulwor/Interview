@@ -141,34 +141,6 @@ Callback hell - когда вложенность большая, что его 
 
 </details>
 
-<details>
-<summary>15. Что такое мемоизация? Реализуйте базовую логику функции для мемоизации
-</summary>
-
-Мемоизация - метод, который пытается повысить производительность путем кеширование (сохранение) ее раннее вычисленных результатов. Он нужен для предотвращение повторных вычислений, если у нас есть одинаковые аргументы, она не будет выполнена, а результат работы вернется из кеша. Существует минус данного подхода: нужно выделять доп.память
-
-```
-const memoize = (fn) => {
-	const cache = {}
-	return function (param) {
-		if(cache[param]) {
-			return cache[param]
-		} else {
-			const result = fn(param);
-			cache[param] = result;
-			return result;
-		}
-	}
-}
-
-const toUpper = (str = " ") => str.tuUpperCase();
-const toUpperMemorized = memoize(toUpper)
-
-toUpperMemoized("Yauhen")			// Call function 'toUpper' get result
-toUpperMemoized("Yauhen")			// Doesn't call 'toUpper; return result from 'cache'
-```
-
-</details>
 
 <details>
 <summary>16. Что такое цикл событий (event loop) и как он работает?  </summary>
