@@ -1,4 +1,3 @@
-Типы таймеров в JavaScript?
 Что обозначает this в JavaScript?
 Разница между .call(), .apply() и bind()?
 Что такое псевдомассив arguments?
@@ -60,14 +59,8 @@ OOP: Как работает boxing/unboxing в JavaScript?
 Что такое AJAX?
 Что такое same-origin policy в контексте JavaScript?
 Что такое цикл событий (event loop) и как он работает?
-Что такое промисы (Promises)?
 Плюсы и минусы использовании Ajax?
 Подходы при работе с асинхронным кодом?
-Преимущества использовании промисов вместо колбэков?
-Что такое коллбэк-функция (Callback)? Что такое Callback Hell?
-? Что такое async/await?
-Разница между Promise.all(), Promise.any() и Promise.race()?
-Расскажите про статический метод .allSettled()?
 Что такое ECMAScript? В чём отличие от JavaScript?
 Разница между Rest и Spread операторами?
 Что такое деструктуризация?
