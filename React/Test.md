@@ -41,21 +41,3 @@ Redux
 
 ---
 
-Дополнительно
-221 What is React memo function?
-222 What is React lazy function?
-226 What are hooks?
-227 What rules need to be followed for hooks?
-231 Can you describe about componentDidCatch lifecycle method signature?
-252 What are Keyed Fragments?
-265 How do you pass arguments to an event handler?
-277 Give an example on How to use context?
-278 What is the purpose of default value in context?
-279 How do you use contextType?
-298 What is the difference between Real DOM and Virtual DOM?
-312 Describe about data flow in react?
-319 What is Concurrent Rendering?
-330 What is prop drilling?
-331 What is state mutation and how to prevent it?
-332 What is the difference between useState and useRef hook?
-333 What are the Differences Between Functional and Class Component in React?
