@@ -5,52 +5,6 @@
 
 </details>
 
-<details>
-<summary>Что такое DOM? </summary>
-
-Расшифровывает как document object model - объектная модель документа. Он нужен для того,
-что
-
-Можем ли мы отрисовать html-документ в браузере не имея дома?
-
-Как называется события которое свидетельствует о том, что наш дом полностью загружен? -
-domContentLoaded
-
-</details>
-
-<details>
-<summary>Можем ли мы отрисовать html-документ в браузере не имея дома?</summary>
-
-</details>
-
-<details>
-<summary>Как называется события которое свидетельствует о том, что наш дом полностью загружен?</summary>
-
-domContentLoaded
-
-</details>
-
-<details>
-<summary>Что такое handshake?</summary>
-
-</details>
-
-<details>
-<summary>Что делает оператор instanceOf и чем он отличается от typeOf</summary>
-
-typeOf - возвращает тип в виде строки
-instanceOf принадлежит жи данный экземпляр к классу или его предку: true / false
-
-</details>
-
-
-<details>
-<summary> Что такое boxing/unboxing?</summary>
-
-Преобразование из примитиво в объект (boxing), а из объекта в примитив уже unboxing. В момент вызова функции будет упаковка - это буде объект, который возмет по прототипу
-
-</details>
-
 ### Function
 --
 
