@@ -183,7 +183,7 @@ function handleClick(event) {
 </details>
 
 <details>
-<summary> Что такое SyntheticEvents в Реакте? </summary>
+<summary> Что такое SyntheticEvents (синтетические события) в Реакте? </summary>
 
 `SyntheticEvents` - это кроссбраузерная обёртка над нативным экземпляром события. Его API такой же, как и собственное событие браузера, включая stopPropagation()и preventDefault(), за исключением того, что события работают одинаково во всех браузерах.
 

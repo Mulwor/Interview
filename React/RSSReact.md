@@ -5,9 +5,7 @@
 
 - Что такое JSX?
 
-JSX - `(JavaScript XML)` - расширения языка JS, который позволяет разработчику объединить (использовать синтаскис) JavaScript-кода 
-и HTML/XML в один файл. По сути, JSX - это синтаксический сахар React.createElement. Берет наш код, который в jsx и компилирует его 
-в функцию React.createElement.
+JSX - `(JavaScript XML)` - расширения языка JS, который позволяет разработчику объединить (использовать синтаскис) JavaScript-кода  и HTML/XML в один файл. По сути, JSX - это синтаксический сахар React.createElement. Берет наш код, который в jsx и компилирует его в функцию React.createElement.
 
 - Можно ли использовать реакт без JSX?
 
@@ -27,22 +25,25 @@ function Greeting(props) {
 
 
 <details>
-<summary>3. What is the virtual DOM? </summary>
+<summary> What is the difference between the virtual DOM and the real DOM?</summary>
+
+Дом представляет собой древовидную структуру, в которой каждый узел представляет собой часть документа - элемент, его атрибут или текст. Если мы используем используем ванильный JS, то мы можем получить к каждому элементу и изменить его напрямую. После того как мы меняем его, то браузер перерисовывает полностью весь наш дом, что приводит к уменьшению производительностью.
 
 </details>
 
+
 <details>
-<summary>4. How does react use the virtual DOM to render the UI?</summary>
+<summary> What is the virtual DOM? How does react use the virtual DOM to render the UI?</summary>
+
+Virtual-dom - это облегченная (легковесная) копия реального дома, которая представляет собой дерево объектов. Когда состояние компонента изменяется, то реакт обновляет виртуальный DOM, а после обновления виртуальный дом текущей версии сравнивается с предыдущим домом, находить изменения и вносит их уже в настоящий дом. 
 
 </details>
 
-<details>
-<summary>5. Is the virtual DOM the same as the shadow DOM?</summary>
-
-</details>
 
 <details>
-<summary>6. What is the difference between the virtual DOM and the real DOM?</summary>
+<summary> Is the virtual DOM the same as the shadow DOM?</summary>
+
+Это разные понятие, однако в чем они схожи так в том, что они помогают решить проблемы с производительностью. Виртуальный дом создает копиью всего объекта дома, а теневой дом создает только небольшую часть. Теневой дом - концепция браузера и она необходима когда мы хотим какой-то элемент полностью изолировать, чтобы к нему даже не применялись глобальные стили.
 
 </details>
 
@@ -51,19 +52,26 @@ function Greeting(props) {
 #### Render
 
 <details>
-<summary>7. When is a component rendered?</summary>
+<summary> When is a component rendered?</summary>
+
+- Когда меняется его состояния;
+- Когда обновляется данные, которые приходят через пропсы;
+- Когда при первом монтирование компонента, также происходит рендеринг, чтобы отобразить свое начальное положение
+
+Грубо говоря когда он создается и когда он обновляется
+
 
 </details>
 
 
 <details>
-<summary>8. How not to render on props change?</summary>
+<summary> How not to render on props change?</summary>
 
 </details>
 
 
 <details>
-<summary>9. Is it OK to use arrow functions in render methods?</summary>
+<summary> Is it OK to use arrow functions in render methods?</summary>
 
 </details>
 
