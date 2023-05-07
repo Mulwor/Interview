@@ -1,0 +1,70 @@
+Что такое React Reconciliation?
+Что такое портал (Portal)?
+Что такое контекст (Context)?
+Что такое React Fiber?
+Что такое синтетические события в React?
+Что такое React-ссылка (ref)? Как создать ссылку?
+Назовите преимущества использования React?
+Что такое условный рендеринг (Conditional Rendering)? Как его выполнить?
+Что такое компонент-переключатель (Switching Component)?
+Разница между React и ReactDOM?
+Разница между компонентом и контейнером?
+Как React обрабатывает, или ограничивает использование пропсов определенного типа?
+Что такое строгий режим в React? Его преимущества?
+Что такое «опрос» (Polling)? Как его реализовать в React?
+Что такое ReactDOMServer?
+Что такое предохранители (Error Boundaries)?
+Что такое «ленивая» (Lazy) функция?
+Разница между рендерингом и монтированием?
+Что такое сhildren?
+Что такое события указателя (Pointer Events)?
+Что такое инверсия наследования (Inheritance Inversion)?
+Как в React реализовать двустороннее связывание данных?
+Разница между классовым и функциональным компонентами?
+Что такое поднятие состояния вверх (Lifting State Up)?
+Разница между createElement() и cloneElement()?
+Что такое useReducer()?
+Как реализовать однократное выполнение операции при начальном рендеринге?
+Что такое распределенный компонент?
+Как отрендерить HTML код в React-компоненте?
+Зачем в setState() нужно передавать функцию?
+Для чего предназначен метод registerServiceWorker() в React?
+Разница между memo и useMemo?
+Является ли React реактивным?
+Техники оптимизации перфоманса React?
+Лучшие практики безопасности в React?
+
+
+
+
+
+
+
+#### After analyzing the main issues, but not necessarily
+
+<details>
+<summary> 1. Расскажите про дополнительные хуки: useImperativeHandle(), useLayoutEffect(), useDebugValue()? </summary>
+
+</details>
+
+
+<details>
+<summary> 2. Расскажите про дополнительные хуки:  useDeferredValue(), useTransition(), useId()? </summary>
+
+</details>
+
+
+<details>
+<summary> 3. Что такое strict mode в реакте? </summary>
+
+</details>
+
+
+<details>
+<summary> 4. В чем польза рефов?</summary>
+
+Как создавать рефы (refs)? 
+
+Что такое React.forwardRef?
+
+</details>
