@@ -9,18 +9,18 @@
 
 var buildArray = function (nums) {
   let array = []
+  // * 0 [0]; 
+  // * 1 [0, 1]; 
+  // * 2 [0, 1, 2]; 
+  // * 3 [0, 1, 2, 4]; 
+  // * 4 [0, 1, 2, 4, 5]; 
+  // * 5 [0, 1, 2, 4, 5, 3];
   for (let i = 0; i < nums.length; i++) {
-    // * 1. В начале будет идти, что находится внутри массива: nums[i] =>  [0, 2, 1, 5, 3, 4]
-    // * 2. Во вторых пойдет уже nums[nums[i]] => [0, 1, 2, 3, 4, 5]
-    // * 3. Произойдет сравнения:
-    // * [0, 2, 1, 5, 3, 4]
-    // * [0, 1, 2, 3, 4, 5]
-
-    // * [0, 1, 2, 4, 5, 3]
     array[i] = nums[nums[i]]
   }
   return array
 }
+buildArray([0, 1, 2, 4, 5, 3])
 
 var buildArray = function (nums) {
   return nums.map((num) => nums[num])
