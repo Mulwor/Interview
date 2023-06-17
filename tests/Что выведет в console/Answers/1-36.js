@@ -219,3 +219,220 @@ function getAge() {
 }
 
 getAge()
+
+
+
+// ! Day 2
+
+// ? =============================
+// * Вопрос № 18 (Метод eval() выполняет JavaScript-код, представленный строкой.)
+
+const sum = eval("10*10+5")
+console.log(sum)                   // * 105
+
+// ? =============================
+// * Вопрос № 19
+
+var num = 8
+var num = 10
+
+console.log(num)                  // * 10
+
+
+// ? =============================
+// * Вопрос № 20 (Ключи тоже могут быть строками вне зависимости как мы напишем)
+
+const obj = { 
+  1: "a", 
+  2: "b", 
+  3: "c" 
+}
+const set = new Set([1, 2, 3, 4, 5])
+
+console.log(obj.hasOwnProperty("1"))
+console.log(obj.hasOwnProperty(1))
+console.log(set.has("1"))
+console.log(set.has(1))
+
+
+// ? =============================
+// * Вопрос № 21
+
+const obj1 = { 
+  a: "one", 
+  b: "two", 
+  a: "three" 
+}
+
+console.log(obj1)
+
+// * Если в объекте имеется два ключа с одинаковыми именами,
+// * то первый ключ перезаписывается. Его позиция сохраняется
+// * а значением становится последнее из присвоенных.
+
+
+// ? =============================
+// * Вопрос № 22
+
+for (let i = 1; i < 5; i++) {
+  // 1, 2 ... 4
+  if (i === 3) continue
+  console.log(i)
+}
+
+// * Оператор continue пропускает текущую итерацию (цикл).
+// * если условие удовлетворяется (является истинным).
+
+
+// ? =============================
+// ! Вопрос № 23
+
+String.prototype.giveMePizza = () => {
+  return "Give me pizza!"
+}
+
+const name = "John"
+
+console.log(name.giveMePizza())
+
+
+// ? =============================
+// * Вопрос № 24
+
+const a1 = {}
+const b1 = { key: "b" }
+const c1 = { key: "c" }
+
+a1[b1] = 123
+a1[c1] = 456
+
+console.log(a1[b1])
+
+// ? =============================
+// * Вопрос № 25
+
+const foo = () => console.log("first")
+const bar = () => setTimeout(() => console.log("second"))
+const baz = () => console.log("third")
+
+bar()
+foo()
+baz()
+
+
+// ? =============================
+// * Вопрос № 26
+
+```
+<div onclick="console.log('div')">
+  <p onclick="console.log('p')">
+    Нажми меня!
+  </p>
+</div>
+```
+
+// ? =============================
+// ! Вопрос № 27 (Call, apply, bind)
+
+const person2 = { 
+  name: "John" 
+}
+
+function sayHi(age) {
+  console.log(`${this.name} is ${age}`)
+}
+
+sayHi.call(person2, 30)
+sayHi.bind(person2, 30)
+
+
+// ? =============================
+// * Вопрос № 28
+
+function sayHi() {
+  return (() => 0)()
+}
+
+console.log(typeof sayHi())         // * Number
+
+
+// ? =============================
+// * Вопрос № 29
+
+console.log(typeof typeof 1)         //* String
+
+// ? =============================
+// * Вопрос № 30
+
+const numbers = [1, 2, 3]
+numbers[10] = 11
+console.log(numbers)                  // * [1, 2, 3, 7 x empty, 11]
+
+// ? =============================
+// * Вопрос № 31 (!try, catch - не блок)
+
+(() => {
+  let x, y
+  try {
+    throw new Error()
+  } catch (x) {
+    (x = 1), (y = 2)
+    console.log(x)
+  }
+  console.log(x)
+  console.log(y)
+})()                       // 1 undefined 2 
+
+// ? =============================
+// * Вопрос № 32
+
+const result = [[0, 1], [2, 3]].reduce((acc, cur) => {
+  return acc.concat(cur)    // 1 2 0 1 2 3
+}, [1, 2])
+
+console.log(result)
+
+// ? =============================
+// * Вопрос № 33
+
+console.log(!!null)        // False
+console.log(!!"")          // False
+console.log(!!1)           // true
+
+
+
+// ? =============================
+// * Вопрос № 34
+
+console.log([..."John"])      // ["J", "o", "h", "n"]
+
+// ? =============================
+// ! Вопрос № 35
+
+function* generator(i) {
+  yield i
+  yield i * 2
+}
+
+const gen = generator(10)
+
+console.log(gen.next().value)       // 10
+console.log(gen.next().value)       // 20
+
+
+// ? =============================
+// * Вопрос № 36
+
+const firstPromise = new Promise((res, rej) => {
+  setTimeout(res, 500, "one")
+})
+
+const secondPromise = new Promise((res, rej) => {
+  setTimeout(res, 100, "two")
+})
+
+// * Возвращает первый выполненный или отклоненный промис
+
+Promise.race([firstPromise, secondPromise]).then(res => console.log(res))
+
+
