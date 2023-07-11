@@ -15,5 +15,4 @@ Light dom
 Shadow dom
 EventFase
 Чем отличается addEventListener от StopPropaggation
-Как называется события которое свидетельствует о том, что наш дом полностью загружен? -
-domContentLoaded
+Как называется события которое свидетельствует о том, что наш дом полностью загружен? - domContentLoaded
