@@ -63,7 +63,7 @@ async function process1(action1: action, action2: action, action3: action): Prom
   return [res1, res2, res3]
 }
 
-// ? Он завершится после вызова action2 и вернет массив, содержащий res1 и sucess
+// ! Он завершил и вернет значения [res1, res2 ("Success"), res3]
 
 
 // * 5. Необходимо написать функцию для слипа (sleep), чтобы он выполнился через 300 миллисекнуж после process1
