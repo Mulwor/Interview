@@ -39,32 +39,3 @@
 
 
 
-
-#### After analyzing the main issues, but not necessarily
-
-<details>
-<summary> 1. Расскажите про дополнительные хуки: useImperativeHandle(), useLayoutEffect(), useDebugValue()? </summary>
-
-</details>
-
-
-<details>
-<summary> 2. Расскажите про дополнительные хуки:  useDeferredValue(), useTransition(), useId()? </summary>
-
-</details>
-
-
-<details>
-<summary> 3. Что такое strict mode в реакте? </summary>
-
-</details>
-
-
-<details>
-<summary> 4. В чем польза рефов?</summary>
-
-Как создавать рефы (refs)? 
-
-Что такое React.forwardRef?
-
-</details>
