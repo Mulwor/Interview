@@ -1,9 +1,12 @@
 import React from 'react';
 import './App.css';
+import { GetValueWithUseRef } from './hooks/useRef';
 
 function App() {
   return (
-   <div>HYi</div>
+   <div>
+      <GetValueWithUseRef />
+   </div>
   );
 }
 
