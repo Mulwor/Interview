@@ -3,9 +3,8 @@
 
 
 // * ================================ Record =====================================
-// ! Record - представляет из себя объект с определенным набором ключей
-// ! и значений. Первое значение определяет возможные ключи объекта, а второе
-// ! значение соответствующие каждому ключу
+// ! Record создает тип, который представляют объекты с заданными ключами и значениями. 
+// ! Она позволяет определить тип объекта, где все ключи имеют один и тот же тип значения.
 
 type Fruit = "apple" | "banana" | "orange"
 type FruitInfo = Record<Fruit, number>
@@ -106,21 +105,129 @@ type Test9 = Exclude<TestNonNullable2, null | undefined>      // ? Test3 = false
 
 
 // * ================================== Partial ============================================
+// ! Нужен для того, чтобы некоторые свойста в объекте или в массиве сделать опцианальными
 
+type Test10 = Partial<{a: number; b: string}>;
+type Test11 = Partial<[1, 2, 'asdf']>
+type Test12 = Partial<number[]>     // * {number | undefined}[]
+type Test13 = Partial<string>       // * string
+
+interface Config {
+  prop1: number;
+  prop2: string;
+  test: number[];
+}
+
+const baseConfig: Config = { prop1: 1, prop2: "2", test: [1]}
+
+function extendConfig(override: Partial<Config>): Config {
+  return {...baseConfig, ...override}
+}
+
+const result = extendConfig({ test: [1, 2, 3] });  // *const result: Config
 
 // * ================================== Required ============================================
+// ! Все свойста делает обязательными
+
+type Test14 = Required<{a?: number; b: string | undefined | null}>;
+// * Test14 = {a: number; b: string | undefined | null}
+type Test15 = Required<[1 | undefined | null, 2?, "asdf"?]>
+// * Test15 = [1 | undefined | null, 2, "asdf"]
+type Test16 = Required<(number | undefined | null)[]>
+// * Test16 = (number | null)[]
+type Test17 = Required<string | undefined | null>
+// * Test17 = string | null | undefined
 
 
 // * ================================== Readonly ============================================
+// ! Создает тип, свойства которых нельзя изменить
+
+type Test18 = Readonly<{a: number; c: string; d: {e: string}}>
+// * Test18 = {readonly a: number; readonly c: string; readredonly: {e: string}}
+type Test19 = Readonly<number[]>
+// * Test19 = readonly<number[]> 
+type Test20 = Readonly<string>
+// * Test20 = readonly<number[]> 
+
+
+interface Todo {
+  title: string;
+}
+const todo: Readonly<Todo> = {
+  title: "Delete inactive users",
+};
+ 
+todo.title = "Hello";
 
 
 // * ================================== Parameters ============================================
+// ! Достает аргумент и создает тип кортежа(tuple), используемых в параметрах типа функции Type
+// ! Кортеж представляет набор элементов, для которыз уже заранее известен тип. Они могут
+// ! Хранить значения разных типов
+
+type Test21 = Parameters<(a: number, b: number) => number>;
+// * Test21 = [number, number]
+type Test22 = Parameters<(a: number, b: string, c?: boolean) => void>;
+// * Test22 = [a: number, b: string, c?: boolean | undefined]
+
+
+const sumFunction = (a: string, b: string) => a + b;
+type Test23 = Parameters<typeof sumFunction>
+let myArray: Test23 = [ 'hello ', 'world' ];
+sumFunction(...myArray)
+
 
 
 // * ================================== ReturnType ============================================
+// ! Достает значение, которое мы возвращаем. Используется в различных сторах
+type Test24 = ReturnType<() => number>;
+// * Test24 = number
+type Test25 = ReturnType<(a: number) => string>
+// * Test25 = string
+type Test26 = Test24 & Test25
+
+// ? import type { store } from './root';
+// ? export type RootStore = ReturnType<typeof store.getState>
+ 
 
 
 // * ================================== Awaited ============================================
-// ?
+// ! Awaited - позволяет получить тип, который будет возвращен после ожидания(awaiting) промиса.
 
-// ?
+// * Пример №1
+type A = Awaited<Promise<string>>;
+// ? type A = string
+type B = Awaited<Promise<Promise<number>>>; 
+// ? type B = number
+type C = Awaited<boolean | Promise<number>>;
+// ? type C = boolean | number
+
+
+// * Пример №2
+type NumberPromise = Promise<number>
+type StringPromise = Promise<string>
+type Test27= Awaited<NumberPromise>
+type Test28 = Awaited<StringPromise>
+
+const asyncFn = () => Promise.resolve({ prop1: 5, prop2: "test"} );
+
+type AsyncFnReturnIncorrect = ReturnType<typeof asyncFn>
+// ? AsyncFnReturnIncorrect = Promise<{ prop1: number; prop2: string; }>
+type AsyncFnReturn = Awaited<ReturnType<typeof asyncFn>>;
+// ? AsyncFnReturn = Promise<{ prop1: number; prop2: string; }>
+
+
+// * Пример №3
+function asyncNumber(): Promise<number> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(42);
+    }, 1000);
+  });
+}
+type ResultType = Awaited<ReturnType<typeof asyncNumber>>;
+
+async function main() {
+  const result: ResultType = await asyncNumber();
+  console.log(result.toFixed(2)); 
+}
