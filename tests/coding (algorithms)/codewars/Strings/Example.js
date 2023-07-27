@@ -11,7 +11,7 @@ var isAnagram = function (test, original) {
 };
 
 isAnagram('foefet', 'toffee'), // true,
-  isAnagram('Twoo', 'WooT'); // true
+isAnagram('Twoo', 'WooT'); // true
 isAnagram('dumble', 'bumble'); // false
 isAnagram('ound', 'round'); // false
 
