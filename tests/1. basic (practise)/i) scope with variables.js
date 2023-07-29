@@ -66,6 +66,18 @@ let easeF3 = easeFunctionFive();
 console.log(easeF3());
 
 
+// TODO => ! IIFE
+(function() {
+  console.log("Hi there!")
+})();
+
+// TODO
+var result = (function () {
+  var name = "Barry";
+  return name;
+})();
+result;                                         // * "Barry" 
+
 // TODO
 let normalLevelFirst = 10;
 (function normalFunctionFirst() {
