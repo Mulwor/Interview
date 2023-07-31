@@ -1,9 +1,9 @@
 // ! Реализуй жизненный цикл в хуке useEffect() когда он монтируется и размонтируется.
 // ! И если мы в зависимости будем передавать show и count, то когда будет рендерится наш компонент
 
-useEffect(() => {
-  console.log("Render")
+console.log("Render")
 
+useEffect(() => {
   return () => {
     console.log("Unmount")
   }
