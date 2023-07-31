@@ -179,3 +179,29 @@ hardValueThird();
 let hardValueFouth = specialHardf3();
 hardValueFouth();
 hardValueFouth();
+
+
+// TODO
+function createCounter() {
+  let count = 0
+
+  const increment = () => count++
+  const decrement = () => count--
+  return { count, increment, decrement }
+}
+const result = createCounter()
+result.increment()
+result.increment()
+console.log(result.count)
+
+
+// TODO
+const createId = () => {
+  let id = 0
+  return () => id++
+}
+
+const getId = createId()
+console.log(getId())
+console.log(getId())
+console.log(getId())

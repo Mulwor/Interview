@@ -19,9 +19,11 @@ a.sort((firstIndex, lastIndex) => (firstIndex - lastIndex))    //? [1, 2, 4, 5, 
 
 
 // * У нас есть массив чисел, необходимо посчитать их однако число должно начинаться не с 0, а с -1
-const digits = [1, 2, 3, 4]          
+const digits = [1, 2, 3, 4]       
+
 // ? Через reduce 
 digits.reduce((a, b) => a + b, -1)
+
 // ? Через цикл
 function sum (digits) {
   let value = -1;
@@ -35,9 +37,12 @@ sum([1,2,3,4])
 
 // * У нас есть массив повторяющих значений, как из него убрать все повторяющиеся значения. То есть сделать
 // * из повторяющихся значений не повторяющие.
-const names = ['Vasya', 'Masha', 'Vasha'];
+const names = ['Vasya', 'Masha', 'Vasya', 'Vasha'];
 // ? - Через структуру данных Set
 
+const makeUniq = (names) => {
+  return names.filter((element, id) => arr.indexOf(element) === id);
+}
 
 
 // * Что выведется в консоль
