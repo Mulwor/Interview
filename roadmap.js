@@ -1,3 +1,4 @@
-// Roadmap from https://neetcode.io/roadmap
+// Roadmap(https://neetcode.io/roadmap)
 
-// Array & Hashing
+// Array - 
+// У массива есть ряд методов: 
