@@ -1,9 +1,16 @@
-Здесь будут находится разные алгоритмы с литкода/кодеварса.
+В данной ветке репозитория находится путь по улучшения алгосов для прохождения собесов. Цель за 4-6 месяца освоить на неплохом уровне алгоритмические задачи
 
-0. https://leetcode.com/explore/learn/card/the-leetcode-beginners-guide/692/challenge-problems/
+Основные ресуры: 
+--- 
 
-1. Изучить это: https://leetcode.com/studyplan/30-days-of-javascript/
+- [Статья](https://habr.com/ru/articles/713498/)
 
-2. https://leetcode.com/explore/featured/card/top-interview-questions-easy/
+- [Roadmap](https://neetcode.io/roadmap)
 
-3. https://leetcode.com/explore/featured/card/fun-with-arrays/523/conclusion/
+- [Leetcode-acceptance](https://leetcode.com/problemset/algorithms/?sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJBQ19SQVRFIn1d)
+
+
+Будущие ресурсы, которые мы будем использовать: 
+---
+
+- [Course-Hunter](https://coursehunter.net/course/javascript-algoritmy-i-struktury-dannyh-master-klass)
