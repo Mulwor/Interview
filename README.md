@@ -5,7 +5,7 @@
 
 - [Статья](https://habr.com/ru/articles/713498/)
 
-- [Roadmap](https://neetcode.io/roadmap)
+- [Roadmap for neetcode](https://neetcode.io/roadmap)
 
 - [Leetcode-acceptance](https://leetcode.com/problemset/algorithms/?sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJBQ19SQVRFIn1d)
 
