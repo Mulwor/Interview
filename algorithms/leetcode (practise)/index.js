@@ -13,7 +13,7 @@ var getConcatenation = function(nums) {
   return nums.concat(nums)
 };
 
-// 79ms
+// 79ms => O(n)
 var getConcatenation = function(nums) {
   return [...nums, ...nums]
 };
@@ -21,16 +21,16 @@ var getConcatenation = function(nums) {
 // 74ms => O(n)
 var getConcatenation = function(nums) {
   let len = nums.length;
-  for(let i = 0; i < len; i++) {
+  for (let i = 0; i < len; i++) {
     nums.push(nums[i]);
   }
   return nums;
 };
 
-// 62ms
+// 62ms => O(n)
 var getConcatenation = function(nums) {
   let arr = new Array();
-  for(let i=0; i<nums.length; i++){
+  for (let i = 0; i < nums.length; i++) {
     arr[i] = arr[nums.length+i] = nums[i];
   }
   return arr;
