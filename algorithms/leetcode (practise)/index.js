@@ -20,8 +20,8 @@ var getConcatenation = function(nums) {
 
 // 74ms => O(n)
 var getConcatenation = function(nums) {
-  let len = nums.length;
-  for (let i = 0; i < len; i++) {
+  let value = nums.length;
+  for (let i = 0; i < value; i++) {
     nums.push(nums[i]);
   }
   return nums;
@@ -36,6 +36,5 @@ var getConcatenation = function(nums) {
   return arr;
 };
 
-// Theory 
-// The concat() method of Array instances is used to merge two or more arrays. This method does not change 
-// the existing arrays, but instead returns a new array.
+
+// =========================================================================================================================================
