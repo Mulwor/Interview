@@ -51,6 +51,8 @@ var buildArray = function(nums) {
   let emptyArray = []
   for (let i = 0; i < nums.length; i++) {
     emptyArray[i] = nums[nums[i]]
+    // nums[i] => [0, 2, 1, 5, 3, 4];
+    // nums[nums[i]] => [0, 1, 2, 4, 5, 3];
   }
   return emptyArray
 };
