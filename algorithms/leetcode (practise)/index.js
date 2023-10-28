@@ -1,66 +1,26 @@
 // https://leetcode.com/problemset/algorithms/?difficulty=EASY&page=1&sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJBQ19SQVRFIn1d
 
-// 1929. Concatenation of Array 
+// 1512. Number of Good Pairs (https://leetcode.com/problems/number-of-good-pairs/)
 
-// Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] 
-// and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
-// Specifically, ans is the concatenation of two nums arrays. Return the array ans.
+// Given an array of integers nums, return the number of good pairs.
+// A pair (i, j) is called good if nums[i] == nums[j] and i < j.
 
-// Input: nums = [1,2,1]    ======>    Output: [1,2,1,1,2,1]
+// Input: nums = [1, 2, 3, 1, 1, 3] => Output: 4
+// Input: nums = [1, 1, 1, 1] => Output: 6
 
-// 51ms => O(n) and O(1)
-var getConcatenation = function(nums) {
-  return nums.concat(nums)
-};
 
-// 79ms => O(n)
-var getConcatenation = function(nums) {
-  return [...nums, ...nums]
-};
-
-// 74ms => O(n)
-var getConcatenation = function(nums) {
-  let value = nums.length;
-  for (let i = 0; i < value; i++) {
-    nums.push(nums[i]);
-  }
-  return nums;
-};
-
-// 62ms => O(n)
-var getConcatenation = function(nums) {
-  let arr = new Array();
+var numIdenticalPairs = function(nums) {
+  let value = 0
   for (let i = 0; i < nums.length; i++) {
-    arr[i] = arr[nums.length+i] = nums[i];
+    for (let j = 0; j < nums.length; j++) {
+      // if nums[i] === nums[j]) {...}
+      if(nums[i] == nums[j] && i < j) {
+        value++
+      }
+    }
   }
-  return arr;
+  return value
 };
 
 
-// =========================================================================================================================================
-
-// 1920. Build Array from Permutation
-
-// Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] 
-// for each 0 <= i < nums.length and return it.
-// A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
-
-// Input: nums = [0,2,1,5,3,4]  ===>   Output: [0,1,2,4,5,3]
-
-// 72ms 
-
-var buildArray = function(nums) {   
-  let emptyArray = []
-  for (let i = 0; i < nums.length; i++) {
-    emptyArray[i] = nums[nums[i]]
-    // nums[i] => [0, 2, 1, 5, 3, 4];
-    // nums[nums[i]] => [0, 1, 2, 4, 5, 3];
-  }
-  return emptyArray
-};
-
-
-// 88ms
-var buildArray = function(nums) {
-  return nums.map(num => nums[num]);
-};
+// ========================================================================================
