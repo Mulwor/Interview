@@ -47,6 +47,8 @@ var getConcatenation = function(nums) {
 
 // Input: nums = [0,2,1,5,3,4]  ===>   Output: [0,1,2,4,5,3]
 
+// 72ms 
+
 var buildArray = function(nums) {   
   let emptyArray = []
   for (let i = 0; i < nums.length; i++) {
@@ -58,6 +60,7 @@ var buildArray = function(nums) {
 };
 
 
+// 88ms
 var buildArray = function(nums) {
   return nums.map(num => nums[num]);
 };
