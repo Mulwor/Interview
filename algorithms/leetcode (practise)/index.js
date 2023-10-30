@@ -10,3 +10,9 @@
 // Return the maximum possible achievable number. It can be proven that there exists at least one achievable number.
 
 // Input: num = 4, t = 1  ===> Output: 6
+
+var theMaximumAchievableX = function(num, t) {
+  return num + t + t
+};
+
+// ==============================================================================================================
