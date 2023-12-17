@@ -35,7 +35,7 @@ const action2 = () => new Promise((res, rej) => {
     // res("SUCCESS")
 });
 
-async function process1(action1: action, action2: action, action3: action): Promise<string[]> {
+async function process3(action1: action, action2: action, action3: action): Promise<string[]> {
   const res1 = await action1();
   const res2 = await action2();
   const res3 = await action3();
