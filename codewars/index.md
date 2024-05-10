@@ -8,4 +8,4 @@ Mats.abs(1)       // 1
 ```
 
 
-https://www.codewars.com/kata/search/javascript?q=&r%5B%5D=-8&beta=false&order_by=popularity%20desc
+https://www.codewars.com/kata/search/javascript?q=&r%5B%5D=-8&xids=completed&beta=false&order_by=popularity%20desc
