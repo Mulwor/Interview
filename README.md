@@ -1,7 +1,8 @@
 # Материалы для решение алгоритмических задач
 
+[Codewars - 7 kyu](https://www.codewars.com/kata/search/my-languages?q=&r%5B%5D=-7&beta=false&order_by=popularity%20desc) - необходимо решить 100+- задач.
 
-[Codewars - 8 kyu](https://www.codewars.com/kata/search/my-languages?q=&r%5B%5D=-8&beta=false&order_by=popularity%20desc) - необходимо решить 50 задач.
+Успешное прохождение на 6kyu считается тогда когда успешно ты смог решить 70+ задач => 5 / 100
 
 Ресурcы: 
 --- 
