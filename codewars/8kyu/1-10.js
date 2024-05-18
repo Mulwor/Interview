@@ -46,6 +46,13 @@ function makeNegative(num) {
   return -Math.abs(num)
 }
 
+function makeNegative(num) {
+  while (num > 0) {
+    num = -num;
+  }
+  return num;
+}
+
 // =============================================================================
 
 // ! 4. Sum of positive
@@ -70,11 +77,15 @@ function positiveSum(arr) {
 
 function positiveSum(arr) {
   var total = 0;    
-  for (i = 0; i < arr.length; i++) {    
-    if (arr[i] > 0) {                   
+  
+  for (i = 0; i < arr.length; i++) {   
+    // .filter 
+    if (arr[i] > 0) {   
+      // . reduce                
       total += arr[i];                  
     }
   }
+  
   return total;                        
 }
 
