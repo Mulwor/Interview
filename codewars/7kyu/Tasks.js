@@ -5,7 +5,7 @@
 
 // Day #3
 
-// Todo =>  Первая десятка
+// ? => Первая десятка
 // https://www.codewars.com/kata/56541980fa08ab47a0000040
 // https://www.codewars.com/kata/55f8a9c06c018a0d6e000132
 // https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d

@@ -23,7 +23,7 @@ const example_2 = [1, 4, 9];
 example_2.map((num) => Math.sqrt(num));                       //* [1, 2, 3]
 
 
-// Todo: простой пример деструктиразации и работы с map
+// Todo: простой пример деструктиризации и работы с map
 const persons = [
   { name: "Jack", age: 19 },
   { name: "John", age: 10 },
@@ -37,9 +37,9 @@ persons.map(({name}) => name)          // ['Jack', 'John', 'Sam', 'Jane']
 // todo: немного усложненный метод
 const users = [
   { "name": ' Ivan', 'order': 12, 'sum': '123,5' },
-  { "name": 'Sergey    ', 'order': 12, 'sum': '123,5' },
-  { "name": 'Matilada   ', 'order': 12, 'sum': '123,5' },
-  { "name": ' Ivanove Petrov', 'order': 12, 'sum': '123,5' },
+  { "name": 'Sergei    ', 'order': 12, 'sum': '123,5' },
+  { "name": 'Matilda   ', 'order': 12, 'sum': '123,5' },
+  { "name": ' Ivanhoe Petro', 'order': 12, 'sum': '123,5' },
 ]
 
 // * Преобразует имена в нижний регистр и удаляет все пробелы
