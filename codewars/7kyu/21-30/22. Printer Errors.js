@@ -26,3 +26,8 @@ function printerError(s) {
 
   return count + "/" + s.length;
 }
+
+
+function printerError(s) {
+  return `${s.replace(/[a-m]/gi, '').length}/${s.length}`;
+}
