@@ -6,10 +6,6 @@
 // Day #3
 
 // ? => Первая десятка
-// https://www.codewars.com/kata/563b662a59afc2b5120000c6
-// https://www.codewars.com/kata/56606694ec01347ce800001b
-// https://www.codewars.com/kata/55fd2d567d94ac3bc9000064
-// https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 // https://www.codewars.com/kata/5648b12ce68d9daa6b000099
 // https://www.codewars.com/kata/5949481f86420f59480000e7
 
