@@ -13,7 +13,7 @@ var numberOfEmployeesWhoMetTarget = function(hours, target) {
 
   for (let i = 0; i < hours.length; i++) {
     if (hours[i] >= target) {
-      array.push(hours[i])
+      array.push(hours[i])    // O(1) - добавление элемента в массив
     }
   }
 
