@@ -1,26 +1,20 @@
-0. Big-o-notation
-1. String
-2. Массивы (сложность вставки, удаления и чтения)
-- Dynamic arrays
-- Static arrays
-3. Hash table
-https://dzen.ru/a/YZ6aXgCanGft7fog
-4. Prefix sums array
-5. Two pointers (два указателя)
+✅ 0. Big-o-notation (как рассчитывается по времени и по памяти)
+✅ 1. Массивы (сложность вставки, удаления и чтения)
+✅ - Dynamic arrays
+✅ - Static arrays
+2. Hash table (Hash maps, hash sets)
+3. Prefix sums array
 
+---------------------------------------------------------------
 
-----
+4. Two pointers (два указателя)
+5. Stack
+6. Binary search
+7. Sliding window
+8. Linked list
+9. Trees
+10. Tries 
+11. Backtracking
+12. Heap
 
-Stack
-Binary search
-Sliding window
-Linked list
-Trees
-Tries 
-Backtracking
-Heap
-
-
--------------------------------------------------------------------------------------------
-
-Big-O-Notation
+---------------------------------------------------------------
