@@ -3,18 +3,18 @@
 ✅ - Dynamic arrays
 ✅ - Static arrays
 2. Hash table (Hash maps, hash sets)
-3. Prefix sums array
+✅ 3. Prefix sums array ===> https://leetcode.com/tag/prefix-sum/
+✅ 4. Two pointers (метод двух указателей)
 
----------------------------------------------------------------
+---
 
-4. Two pointers (два указателя)
-5. Stack
+5. Stack, queue
 6. Binary search
 7. Sliding window
 8. Linked list
 9. Trees
 10. Tries 
 11. Backtracking
-12. Heap
+12. Heap (куча)
 
 ---------------------------------------------------------------
